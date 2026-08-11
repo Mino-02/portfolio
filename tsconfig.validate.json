@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "types": [],
+    "plugins": []
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", ".validation/framework-stubs.d.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Bulletin Builder</title><desc id="desc">Editor de boletines con formularios, revision y publicacion.</desc>
+  <rect width="1200" height="760" fill="#C55E39"/>
+  <circle cx="1060" cy="90" r="170" fill="#F2AA18"/>
+  <text x="64" y="96" fill="#FFF9EF" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">CREATE / REVIEW / PUBLISH</text>
+  <text x="62" y="184" fill="#161713" font-family="Georgia,serif" font-size="84" font-weight="700">BULLETIN</text>
+  <text x="62" y="258" fill="#FFF9EF" font-family="Georgia,serif" font-size="84" font-weight="700">BUILDER</text>
+  <rect x="70" y="310" width="1060" height="380" rx="30" fill="#FFF9EF" stroke="#161713" stroke-width="4"/>
+  <rect x="70" y="310" width="1060" height="58" rx="30" fill="#161713"/>
+  <circle cx="110" cy="339" r="8" fill="#C55E39"/><circle cx="140" cy="339" r="8" fill="#F2AA18"/><circle cx="170" cy="339" r="8" fill="#79A99A"/>
+  <text x="930" y="346" fill="#FFF9EF" font-family="Arial,sans-serif" font-size="14" font-weight="700">DRAFT 02 / GUATEMALA</text>
+  <rect x="104" y="404" width="250" height="246" rx="18" fill="#F2E8D7"/>
+  <text x="130" y="442" fill="#C55E39" font-family="Arial,sans-serif" font-size="14" font-weight="700">01 / ESTRUCTURA</text>
+  <rect x="130" y="470" width="198" height="38" rx="9" fill="#FFF9EF" stroke="#161713"/>
+  <rect x="130" y="522" width="198" height="38" rx="9" fill="#FFF9EF" stroke="#161713"/>
+  <rect x="130" y="574" width="128" height="38" rx="19" fill="#F2AA18"/>
+  <text x="174" y="598" fill="#161713" font-family="Arial,sans-serif" font-size="13" font-weight="700">SIGUIENTE</text>
+  <rect x="380" y="404" width="430" height="246" rx="18" fill="#244936"/>
+  <text x="410" y="444" fill="#F2AA18" font-family="Arial,sans-serif" font-size="14" font-weight="700">02 / VISTA PREVIA</text>
+  <rect x="410" y="470" width="370" height="48" rx="9" fill="#FFF9EF"/>
+  <rect x="410" y="536" width="174" height="86" rx="9" fill="#D8C4A3"/>
+  <rect x="606" y="536" width="174" height="86" rx="9" fill="#79A99A"/>
+  <rect x="836" y="404" width="260" height="246" rx="18" fill="#F2E8D7"/>
+  <text x="860" y="442" fill="#C55E39" font-family="Arial,sans-serif" font-size="14" font-weight="700">03 / REVISION</text>
+  <circle cx="880" cy="486" r="18" fill="#161713"/>
+  <path d="M912 474h146M912 494h108" stroke="#161713" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="880" cy="548" r="18" fill="#F2AA18"/>
+  <path d="M912 538h132M912 558h92" stroke="#161713" stroke-width="6" stroke-linecap="round"/>
+  <rect x="860" y="588" width="212" height="38" rx="19" fill="#161713"/>
+  <text x="926" y="612" fill="#FFF9EF" font-family="Arial,sans-serif" font-size="13" font-weight="700">PUBLICAR</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Campo Claro</title><desc id="desc">Composicion editorial sobre simplificacion de recomendaciones agroclimaticas.</desc>
+  <rect width="1200" height="760" fill="#F2E8D7"/>
+  <rect x="0" y="0" width="300" height="760" fill="#183B31"/>
+  <circle cx="980" cy="120" r="210" fill="#F2AA18"/>
+  <path d="M64 96h174M64 124h122M64 152h150" stroke="#79A99A" stroke-width="7" stroke-linecap="round"/>
+  <text x="64" y="250" fill="#FFF9EF" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="4">MARCO DE LECTURA</text>
+  <text x="64" y="330" fill="#FFF9EF" font-family="Georgia,serif" font-size="74" font-weight="700">CAMPO</text>
+  <text x="64" y="404" fill="#F2AA18" font-family="Georgia,serif" font-size="74" font-weight="700">CLARO</text>
+  <rect x="350" y="118" width="500" height="495" rx="28" fill="#FFF9EF" stroke="#161713" stroke-width="4"/>
+  <rect x="390" y="160" width="420" height="84" rx="14" fill="#C55E39"/>
+  <text x="420" y="195" fill="#FFF9EF" font-family="Arial,sans-serif" font-size="16" font-weight="700">QUE ESTA PASANDO</text>
+  <text x="420" y="225" fill="#FFF9EF" font-family="Georgia,serif" font-size="25" font-weight="700">Lluvias por encima de lo esperado</text>
+  <rect x="390" y="270" width="196" height="132" rx="16" fill="#F2E8D7" stroke="#161713" stroke-width="2"/>
+  <circle cx="448" cy="326" r="30" fill="#F2AA18"/>
+  <path d="M497 314h58M497 338h42M420 372h132" stroke="#244936" stroke-width="7" stroke-linecap="round"/>
+  <rect x="614" y="270" width="196" height="132" rx="16" fill="#D8C4A3" stroke="#161713" stroke-width="2"/>
+  <path d="M650 366c23-57 52-76 86-58 19 10 31 29 40 58" fill="none" stroke="#244936" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="690" cy="312" r="18" fill="#C55E39"/>
+  <rect x="390" y="430" width="420" height="142" rx="16" fill="#244936"/>
+  <text x="420" y="472" fill="#F2AA18" font-family="Arial,sans-serif" font-size="16" font-weight="700">ACCION RECOMENDADA</text>
+  <text x="420" y="518" fill="#FFF9EF" font-family="Georgia,serif" font-size="27" font-weight="700">Revise drenajes antes de sembrar.</text>
+  <path d="M890 390c104-32 164-3 214 86" fill="none" stroke="#C55E39" stroke-width="5"/>
+  <path d="m1091 463 18 15-24 7" fill="none" stroke="#C55E39" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1012" cy="590" r="95" fill="#161713"/>
+  <text x="1012" y="580" text-anchor="middle" fill="#F2AA18" font-family="Georgia,serif" font-size="38" font-weight="700">80 - 100%</text>
+  <text x="1012" y="615" text-anchor="middle" fill="#FFF9EF" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">COMPRENSION</text>
+</svg>

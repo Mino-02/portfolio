@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Aclimate Redesign</title><desc id="desc">Dashboard agroclimatico responsive con mapa, graficas y paneles.</desc>
+  <rect width="1200" height="760" fill="#D8C4A3"/>
+  <circle cx="1080" cy="660" r="240" fill="#C55E39"/>
+  <text x="64" y="88" fill="#244936" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">MULTI-COUNTRY / RESPONSIVE</text>
+  <text x="62" y="174" fill="#161713" font-family="Georgia,serif" font-size="86" font-weight="700">ACLIMATE</text>
+  <text x="712" y="170" fill="#C55E39" font-family="Georgia,serif" font-size="44" font-style="italic">redesign</text>
+  <rect x="68" y="230" width="1064" height="438" rx="30" fill="#FFF9EF" stroke="#161713" stroke-width="4"/>
+  <rect x="68" y="230" width="210" height="438" rx="30" fill="#183B31"/>
+  <text x="100" y="282" fill="#F2AA18" font-family="Arial,sans-serif" font-size="16" font-weight="700">MONITOR</text>
+  <path d="M100 330h140M100 374h108M100 418h126M100 462h88" stroke="#FFF9EF" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+  <rect x="100" y="536" width="146" height="86" rx="16" fill="#F2AA18"/>
+  <text x="124" y="571" fill="#161713" font-family="Arial,sans-serif" font-size="12" font-weight="700">REGION</text>
+  <text x="124" y="603" fill="#161713" font-family="Georgia,serif" font-size="22" font-weight="700">Amazonia</text>
+  <rect x="312" y="274" width="378" height="210" rx="20" fill="#F2E8D7"/>
+  <path d="M342 434c44-88 75-120 120-99 39 18 54 82 95 70 35-10 46-64 103-99" fill="none" stroke="#C55E39" stroke-width="8" stroke-linecap="round"/>
+  <path d="M342 454h318M342 414h318M342 374h318M342 334h318" stroke="#244936" stroke-width="2" opacity=".25"/>
+  <text x="340" y="310" fill="#244936" font-family="Arial,sans-serif" font-size="14" font-weight="700">PRECIPITACION / 30 DIAS</text>
+  <rect x="718" y="274" width="370" height="210" rx="20" fill="#244936"/>
+  <path d="M780 334c51-27 113-16 144 25 23 31 53 37 105 18l21 57H760Z" fill="#79A99A"/>
+  <circle cx="842" cy="368" r="15" fill="#F2AA18"/><circle cx="972" cy="392" r="15" fill="#C55E39"/>
+  <text x="748" y="310" fill="#F2AA18" font-family="Arial,sans-serif" font-size="14" font-weight="700">MAPA DE RIESGO</text>
+  <rect x="312" y="512" width="236" height="112" rx="18" fill="#F2AA18"/>
+  <text x="340" y="548" fill="#161713" font-family="Arial,sans-serif" font-size="13" font-weight="700">ALERTA</text>
+  <text x="340" y="590" fill="#161713" font-family="Georgia,serif" font-size="30" font-weight="700">Alta humedad</text>
+  <rect x="572" y="512" width="236" height="112" rx="18" fill="#79A99A"/>
+  <text x="600" y="548" fill="#161713" font-family="Arial,sans-serif" font-size="13" font-weight="700">TENDENCIA</text>
+  <text x="600" y="590" fill="#161713" font-family="Georgia,serif" font-size="30" font-weight="700">+12%</text>
+  <rect x="832" y="512" width="256" height="112" rx="18" fill="#161713"/>
+  <text x="860" y="548" fill="#F2AA18" font-family="Arial,sans-serif" font-size="13" font-weight="700">SIGUIENTE PASO</text>
+  <text x="860" y="590" fill="#FFF9EF" font-family="Georgia,serif" font-size="25" font-weight="700">Revisar parcelas</text>
+</svg>
