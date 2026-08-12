@@ -121,9 +121,9 @@ export const projects: Project[] = [
     eyebrow: "Tesis de maestría · UX Research + Product Design",
     year: "2025 — 2026",
     accent: "sun",
-    cover: "/art/campo-claro.svg",
+    cover: "/images/projects/campo-claro/cover.webp",
     coverAlt:
-      "Composición editorial abstracta con tarjetas, bloques de texto y un recorrido de lectura que representa la simplificación de boletines agroclimáticos.",
+      "Identidad visual del Marco Campo Claro, con un símbolo de paisaje agrícola y el lema «De lenguaje técnico a acción entendible».",
     featured: true,
     summary:
       "Rediseño del proceso de creación y consumo de boletines agroclimáticos para pequeños productores rurales en contextos de baja conectividad.",
@@ -285,9 +285,9 @@ export const projects: Project[] = [
     eyebrow: "Producto B2B · UX/UI + Frontend",
     year: "2025 — hoy",
     accent: "clay",
-    cover: "/art/bulletin-builder.svg",
+    cover: "/images/projects/bulletin-builder/cover.webp",
     coverAlt:
-      "Ilustración abstracta de un editor de boletines con formularios, comentarios, permisos y una vista de publicación.",
+      "Flujo de creación de un boletín agroclimático en Bulletin Builder, mostrando el paso de mapa de lluvias y la vista previa del boletín.",
     summary:
       "Plataforma para crear, revisar, publicar y visualizar boletines agroclimáticos mediante formularios dinámicos y plantillas controladas.",
     shortOutcome:
@@ -455,9 +455,9 @@ export const projects: Project[] = [
     eyebrow: "Plataforma geográfica · Research + UX/UI + Frontend",
     year: "2023",
     accent: "mint",
-    cover: "/art/waterpoints.svg",
+    cover: "/images/projects/waterpoints-monitoring/cover.webp",
     coverAlt:
-      "Mapa abstracto con puntos de agua, capas geográficas y tarjetas de monitoreo para un contexto de conectividad limitada.",
+      "Mapa de Etiopía en la plataforma Waterpoints and Pasture Monitoring, con puntos de agua codificados por estado y el detalle de un punto seleccionado.",
     summary:
       "Plataforma geográfica para monitorear puntos de agua en Etiopía, diseñada para comunidades rurales y tomadores de decisiones.",
     shortOutcome:
@@ -616,9 +616,9 @@ export const projects: Project[] = [
     eyebrow: "Plataforma multipaís · UX Audit + Responsive UI",
     year: "2024",
     accent: "sand",
-    cover: "/art/aclimate.svg",
+    cover: "/images/projects/aclimate-redesign/cover.webp",
     coverAlt:
-      "Dashboard agroclimático abstracto con mapa, gráficas, filtros y tarjetas de monitoreo responsive.",
+      "Panel de datos climáticos de Aclímate con filtros por fecha y gráficas de temperatura mínima y precipitación.",
     summary:
       "Evaluación y rediseño de una plataforma agroclimática multipaís para simplificar información técnica, mapas, gráficas y paneles de monitoreo.",
     shortOutcome:

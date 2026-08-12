@@ -153,7 +153,7 @@ const projectTranslations: Record<string, ProjectTranslation> = {
     eyebrow: "Master's thesis · UX Research + Product Design",
     year: "2025 — 2026",
     coverAlt:
-      "Abstract editorial composition with cards, text blocks, and a reading path representing the simplification of agroclimatic bulletins.",
+      "Visual identity of the Campo Claro Framework, featuring an agricultural landscape symbol and the tagline “From technical language to understandable action”.",
     summary:
       "Redesign of the process for creating and consuming agroclimatic bulletins for smallholder farmers in low-connectivity contexts.",
     shortOutcome:
@@ -306,7 +306,7 @@ const projectTranslations: Record<string, ProjectTranslation> = {
     eyebrow: "B2B product · UX/UI + Frontend",
     year: "2025 — present",
     coverAlt:
-      "Abstract illustration of a bulletin editor with forms, comments, permissions, and a publication preview.",
+      "Agroclimatic bulletin creation flow in Bulletin Builder, showing the rainfall map step and the bulletin preview.",
     summary:
       "A platform for creating, reviewing, publishing, and viewing agroclimatic bulletins through dynamic forms and controlled templates.",
     shortOutcome:
@@ -466,7 +466,7 @@ const projectTranslations: Record<string, ProjectTranslation> = {
     eyebrow: "Geospatial platform · Research + UX/UI + Frontend",
     year: "2023",
     coverAlt:
-      "Abstract map with water points, geographic layers, and monitoring cards for a limited-connectivity context.",
+      "Map of Ethiopia in the Waterpoints and Pasture Monitoring platform, showing waterpoints by status and details for a selected location.",
     summary:
       "A geospatial platform for monitoring water points in Ethiopia, designed for rural communities and decision-makers.",
     shortOutcome:
@@ -617,7 +617,7 @@ const projectTranslations: Record<string, ProjectTranslation> = {
     eyebrow: "Multi-country platform · UX Audit + Responsive UI",
     year: "2024",
     coverAlt:
-      "Abstract agroclimatic dashboard with a map, charts, filters, and responsive monitoring cards.",
+      "Aclímate climate data dashboard with date filters and charts for minimum temperature and precipitation.",
     summary:
       "Evaluation and redesign of a multi-country agroclimatic platform to simplify technical information, maps, charts, and monitoring dashboards.",
     shortOutcome:
