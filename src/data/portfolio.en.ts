@@ -874,7 +874,7 @@ const projectTranslations: Record<string, ProjectTranslation> = {
         kind: "live",
       },
       {
-        label: "View Amazon",
+        label: "View Amazoniaa",
         href: "https://amazonia.aclimate.org/",
         kind: "live",
       },
