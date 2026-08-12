@@ -1543,12 +1543,23 @@ select {
   color: var(--forest);
 }
 
+.case-hero__copy {
+  min-width: 0;
+}
+
 .case-hero__copy h1 {
   margin-top: 18px;
   font-size: clamp(4.7rem, 8.4vw, 9.2rem);
   font-weight: 700;
   letter-spacing: -0.07em;
   line-height: 0.82;
+}
+
+@media (min-width: 901px) {
+  .case-hero__copy .case-title--long {
+    font-size: clamp(4.4rem, 6.5vw, 7.2rem);
+    line-height: 0.86;
+  }
 }
 
 .case-summary {

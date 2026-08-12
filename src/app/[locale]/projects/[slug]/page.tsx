@@ -103,7 +103,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <div className="case-hero__grid">
               <div className="case-hero__copy">
                 <p className="case-eyebrow">{project.eyebrow}</p>
-                <h1>{project.title}</h1>
+                <h1
+                  className={
+                    project.title.length > 18
+                      ? "case-title case-title--long"
+                      : "case-title"
+                  }
+                >
+                  {project.title}
+                </h1>
                 <p className="case-summary">{project.summary}</p>
 
                 <div

@@ -578,36 +578,40 @@ export const projects = (
       slug: "waterpoints-monitoring",
       index: "03",
       title: "Waterpoints Monitoring",
-      eyebrow: "Plataforma geográfica · Research + UX/UI + Frontend",
-      year: "2023",
+      eyebrow: "Sistema multicanal · UX Research + UX/UI + Frontend",
+      year: "2023 — 2024",
       accent: "mint",
       cover: "/images/projects/waterpoints-monitoring/cover.webp",
       coverAlt:
         "Mapa de Etiopía en la plataforma Waterpoints and Pasture Monitoring, con puntos de agua codificados por estado y el detalle de un punto seleccionado.",
       summary:
-        "Plataforma geográfica para monitorear puntos de agua en Etiopía, diseñada para comunidades rurales y tomadores de decisiones.",
+        "Sistema para monitorear puntos de agua en Etiopía y hacer llegar información útil a dos audiencias con capacidades muy distintas: tomadores de decisiones y comunidades pastoriles.",
       shortOutcome:
-        "Talleres y pruebas ayudaron a adaptar la interacción a modelos mentales institucionales y a un contexto de baja conectividad.",
+        "De dos talleres HCD surgieron una plataforma web y un sistema de alertas; la evaluación final con ocho usuarios dejó un backlog de mejoras y evidenció límites institucionales para completar la solución SMS.",
       challenge:
-        "La plataforma debía hacer comprensible información geográfica y de monitoreo para perfiles distintos, en escenarios donde la conectividad podía ser limitada.",
+        "Durante las sequías, la disponibilidad de agua condiciona la movilidad, el ganado y la subsistencia de comunidades pastoriles. Sin embargo, quienes toman decisiones no contaban con una fuente centralizada para monitorear los puntos de agua, mientras muchos pastoralistas tenían baja conectividad y poco acceso a smartphones.",
       response:
-        "Planeé talleres con comunidades rurales y tomadores de decisiones, diseñé la experiencia y desarrollé el frontend; después analicé y prioricé hallazgos de usabilidad.",
-      role: "Planeación de talleres, UX/UI, análisis de pruebas y frontend",
-      team: "Equipo multidisciplinario en Etiopía",
-      context: "Comunidades rurales · Datos geográficos · Baja conectividad",
+        "Planeé el proceso de investigación, construí personas, journeys y propuestas de solución, diseñé la experiencia y desarrollé el frontend. La respuesta combinó un sistema web para actores institucionales con alertas de baja tecnología pensadas para comunidades pastoriles.",
+      role: "Planeación HCD · Facilitación y síntesis · Personas y journeys · UX/UI · Frontend · Planeación y análisis de usabilidad",
+      team: "Equipo multidisciplinario e internacional con investigadores y aliados locales en Etiopía",
+      context:
+        "Etiopía · Comunidades pastoriles y tomadores de decisiones · Sequía y baja conectividad",
       methods: [
-        "Talleres con usuarios",
-        "Mapeo de necesidades",
-        "Arquitectura de información",
-        "Pruebas de usabilidad",
-        "Análisis de modelos mentales",
+        "Talleres HCD",
+        "Personas",
+        "Journey maps",
+        "Brainstorming y storyboards",
+        "Prototipado",
+        "Think-aloud, SUS y heatmaps",
       ],
-      stack: ["Frontend web", "Diseño responsive", "Datos geográficos"],
+      stack: ["Frontend web", "Diseño responsive", "Mapas y datos geográficos"],
       metrics: [
-        { value: "Etiopía", label: "contexto de implementación" },
-        { value: "2", label: "grupos de actores clave" },
-        { value: "Geo", label: "visualización y monitoreo" },
-        { value: "Low-bandwidth", label: "restricción de diseño" },
+        { value: "2", label: "talleres HCD" },
+        { value: "5", label: "personas" },
+        { value: "2", label: "grupos de usuarios" },
+        { value: "8", label: "participantes · prueba final" },
+        { value: "14", label: "tareas · protocolo" },
+        { value: "2", label: "canales de alerta diseñados" },
       ],
       links: [
         {
@@ -620,120 +624,217 @@ export const projects = (
         {
           id: "discover",
           phase: "Descubrir",
-          title: "Escuchar a quienes producen y usan la información",
+          title:
+            "Entender cómo se decide sobre el agua antes de diseñar el mapa",
           summary:
-            "Los talleres reunieron perspectivas de comunidades rurales y tomadores de decisiones.",
+            "El punto de partida fue comprender cómo viven la escasez de agua quienes dependen directamente de ella y quienes deben responder institucionalmente a una crisis.",
           narrative: [
-            "El proyecto necesitaba conectar información de campo con decisiones institucionales. Eso implicaba entender tareas, vocabulario, confianza en los datos y restricciones de acceso desde ambos lados.",
-            "El contexto de baja conectividad obligó a considerar desde el inicio la cantidad de información, el peso de la interfaz y la forma de recuperar contexto al navegar.",
+            "En Etiopía, muchas comunidades pastoriles dependen del ganado y de puntos de agua superficiales que pueden reducirse o secarse durante periodos de sequía. La información sobre su estado afecta decisiones de movilidad, abastecimiento y respuesta institucional.",
+            "Planeé dos talleres presenciales: uno con tomadores de decisiones de gobierno, investigación y organizaciones, y otro con comunidades pastoriles. En las sesiones con pastoralistas trabajé como facilitador y asesor junto a personal local que podía comunicarse en sus lenguas; con los perfiles institucionales participé directamente en inglés. También tomé notas y participé en la síntesis posterior.",
           ],
           activities: [
-            "Planear talleres con perfiles rurales e institucionales.",
-            "Registrar necesidades, decisiones y puntos de fricción.",
-            "Identificar restricciones de conectividad y dispositivo.",
+            "Planear la metodología y las actividades de los dos talleres HCD.",
+            "Facilitar y supervisar actividades con perfiles institucionales y pastoriles.",
+            "Registrar necesidades, decisiones, canales y restricciones de acceso.",
+            "Sintetizar la evidencia obtenida junto al equipo después de los talleres.",
           ],
-          editorNote:
-            "Añade aquí: agenda de talleres, participantes, fotografías autorizadas, mapas de actores y síntesis de necesidades.",
+          decisions: [
+            "No asumir que todos los actores podían recibir información mediante una interfaz web.",
+            "Analizar las decisiones de comunidades locales y actores institucionales como partes conectadas del mismo sistema.",
+          ],
+          media: [
+            {
+              src: "/images/projects/waterpoints-monitoring/pastoralist-context-storyboard.webp",
+              alt: "Storyboard de seis escenas sobre la vida de una comunidad pastoral en un entorno semiárido, mostrando ganado, desplazamientos y distintos estados de disponibilidad de agua.",
+              caption:
+                "Storyboard de contexto utilizado para acercar a los equipos de decisión a la realidad cotidiana de las comunidades pastoriles y al papel que juega el agua en su movilidad y subsistencia.",
+              width: 805,
+              height: 796,
+            },
+          ],
         },
         {
           id: "define",
           phase: "Definir",
-          title: "Priorizar decisiones, no capas de datos",
+          title: "Una misma señal necesitaba dos formas distintas de llegar",
           summary:
-            "La arquitectura debía responder primero a las preguntas del usuario y después a la estructura de la base de datos.",
+            "Las personas y journeys mostraron que centralizar los datos resolvía solo una parte del problema: el canal debía adaptarse al contexto de cada audiencia.",
           narrative: [
-            "El reto de una plataforma geográfica es evitar que el mapa se convierta en el producto completo. La definición se enfocó en qué necesitaba decidir cada perfil y qué evidencia debía estar visible para hacerlo.",
-            "Los flujos y la jerarquía de información se organizaron alrededor de tareas de monitoreo y consulta.",
+            "Construí directamente las personas, journeys y materiales de análisis a partir de los talleres. Los perfiles pastoriles necesitaban principalmente disponibilidad de agua y pastura, pero dependían de canales como voz, SMS, radio y comunicación comunitaria. Los perfiles institucionales requerían nivel, calidad, ubicación e históricos de los puntos de agua mediante herramientas como dashboard y email.",
+            "La definición separó entonces dos experiencias complementarias: una interfaz rica en información para quienes monitorean y coordinan respuestas, y un mecanismo mucho más sencillo para hacer llegar cambios relevantes a personas con menor conectividad.",
           ],
           activities: [
-            "Agrupar necesidades por tarea y perfil.",
-            "Definir información primaria, secundaria y de detalle.",
-            "Priorizar recorridos para consulta y monitoreo.",
+            "Construir cinco personas a partir de los perfiles identificados.",
+            "Desarrollar journeys para escenarios locales e institucionales.",
+            "Mapear necesidades, información esperada y canales de comunicación.",
+            "Convertir los hallazgos en problem statements y oportunidades de diseño.",
           ],
-          editorNote:
-            "Añade aquí: problem statement, personas, user journeys, arquitectura y criterios de prioridad.",
+          decisions: [
+            "Diseñar por capacidad y contexto en lugar de forzar una misma interfaz para todos.",
+            "Usar dashboard y email para actores institucionales y explorar SMS como canal para pastoralistas.",
+            "Mantener el estado del waterpoint como una señal compartida entre ambos recorridos.",
+          ],
+          media: [
+            {
+              src: "/images/projects/waterpoints-monitoring/persona-pastoralist.webp",
+              alt: "Ficha de persona de una pastora en Etiopía con objetivos, desafíos, necesidades de información sobre agua y pastura, y preferencia por canales como llamadas, SMS y radio.",
+              caption:
+                "Perfil pastoral: la información necesaria era concreta y local, pero el acceso tecnológico hacía inviable depender de una aplicación para smartphone.",
+              width: 1054,
+              height: 782,
+            },
+            {
+              src: "/images/projects/waterpoints-monitoring/persona-expert-gov.webp",
+              alt: "Ficha de persona de un experto gubernamental en Etiopía con necesidades de información sobre nivel, calidad, ubicación y uso de los puntos de agua.",
+              caption:
+                "Perfil de gobierno técnico: necesitaba consultar información centralizada y detallada mediante dashboard y canales institucionales.",
+              width: 1052,
+              height: 787,
+            },
+            {
+              src: "/images/projects/waterpoints-monitoring/persona-ngo.webp",
+              alt: "Ficha de persona de una profesional de una ONG con necesidades de información sobre puntos de agua, acceso a datos y comunicación con comunidades pastoriles.",
+              caption:
+                "Perfil ONG: además de consultar datos, necesitaba compartir información y considerar las barreras de inclusión digital de las comunidades.",
+              width: 1050,
+              height: 787,
+            },
+            {
+              src: "/images/projects/waterpoints-monitoring/user-type-considerations.webp",
+              alt: "Diagrama que compara necesidades por tipo de usuario, incluyendo gobierno de alto nivel, expertos gubernamentales, ONG, sector privado y profesionales de ONG.",
+              caption:
+                "La síntesis hizo visibles diferencias entre perfiles: algunos necesitaban análisis y acceso a datos; otros priorizaban comunicación, simplicidad y canales capaces de llegar a comunidades remotas.",
+              width: 1415,
+              height: 633,
+            },
+          ],
         },
         {
           id: "ideate",
           phase: "Idear",
-          title: "Explorar patrones para orientarse en el territorio",
+          title: "Diseñar un sistema multicanal, no una sola pantalla",
           summary:
-            "Las alternativas combinaron mapa, filtros y fichas de detalle sin perder el contexto de ubicación.",
+            "Las soluciones conectaron monitoreo, detalle y alertas para que una actualización del waterpoint pudiera convertirse en acciones distintas según quién la recibiera.",
           narrative: [
-            "La ideación debía resolver cómo pasar de una visión territorial a un punto específico y volver sin desorientarse.",
-            "También fue importante reducir acciones y evitar dependencias innecesarias de interacciones complejas o conexiones estables.",
+            "Desarrollé los brainstormings, storyboards y primeras propuestas, y luego las compartí con el equipo para converger en las soluciones. Para los tomadores de decisiones surgió una plataforma con mapa, perfiles de puntos de agua, históricos, pronósticos y suscripciones.",
+            "Para las comunidades pastoriles, la propuesta evitaba depender de un smartphone: una persona podría suscribirse a puntos cercanos y recibir un SMS cuando cambiara su estado. El mismo principio se trasladó a alertas por email para usuarios institucionales.",
           ],
           activities: [
-            "Explorar relaciones entre mapa, lista y detalle.",
-            "Diseñar filtros comprensibles para perfiles no técnicos.",
-            "Proponer estados vacíos, carga y pérdida de conexión.",
+            "Desarrollar brainstormings y storyboards para escenarios locales e institucionales.",
+            "Explorar mapa, perfiles, históricos, pronósticos y suscripciones.",
+            "Diseñar el concepto de alertas por cambio de estado del waterpoint.",
+            "Compartir alternativas con el equipo y converger en el alcance del sistema.",
           ],
-          editorNote:
-            "Añade aquí: sketching, alternativas de mapa/lista, evaluación de patrones y decisiones descartadas.",
+          decisions: [
+            "Mantener una fuente común de información pero variar el canal de entrega.",
+            "No convertir al dashboard en requisito para que una comunidad pastoral pudiera beneficiarse del sistema.",
+            "Utilizar la suscripción a waterpoints como vínculo entre monitoreo y comunicación proactiva.",
+          ],
+          media: [
+            {
+              src: "/images/projects/waterpoints-monitoring/needs-channels-brainstorming.webp",
+              alt: "Tablero de brainstorming que organiza necesidades de información sobre puntos de agua, canales de comunicación, fuentes, recomendaciones y lenguajes para comunidades pastoriles.",
+              caption:
+                "El brainstorming conectó información, fuentes, canales y posibles recomendaciones antes de convertirlas en funcionalidades concretas.",
+              width: 1328,
+              height: 742,
+            },
+            {
+              src: "/images/projects/waterpoints-monitoring/impact-effort-matrix.webp",
+              alt: "Matriz de impacto versus esfuerzo con propuestas de solución para monitoreo de puntos de agua, incluyendo dashboards, alertas por SMS, email, radio, IVR y otros canales.",
+              caption:
+                "Priorizamos las propuestas comparando impacto esperado y esfuerzo de implementación; esto ayudó a converger en dashboard, suscripciones y alertas como componentes centrales.",
+              width: 1425,
+              height: 777,
+            },
+          ],
         },
         {
           id: "prototype",
           phase: "Prototipar y construir",
-          title: "Convertir la geografía en una interfaz operable",
+          title:
+            "Convertir necesidades de información en un producto operativo",
           summary:
-            "Diseñé la experiencia y desarrollé el frontend de la plataforma.",
+            "Después de una validación inicial del concepto, diseñé la experiencia completa y desarrollé el frontend del sistema implementado.",
           narrative: [
-            "La construcción permitió ajustar la interacción a datos y restricciones reales. Los componentes debían conservar jerarquía en diferentes tamaños de pantalla y mantener clara la relación entre un punto de agua y su información asociada.",
-            "La implementación también hizo visibles decisiones técnicas que afectaban la experiencia, como tiempos de carga, cantidad de marcadores y persistencia de filtros.",
+            "El primer prototipo permitió revisar rápidamente la organización de la solución antes de avanzar al desarrollo. A partir de esa base diseñé la UX/UI de la plataforma y desarrollé su frontend; otro miembro del equipo fue responsable del backend.",
+            "El producto terminó reuniendo monitoreo geográfico, estados de waterpoints, perfiles detallados, datos históricos, pronósticos, información de forraje, suscripciones y alertas. La implementación permitió trabajar con datos y comportamientos reales en lugar de limitar la evaluación a pantallas de Figma.",
           ],
           activities: [
-            "Construir vistas geográficas y fichas de información.",
-            "Diseñar comportamiento responsive.",
-            "Integrar datos y estados reales del servicio.",
+            "Construir y revisar el primer prototipo de la experiencia.",
+            "Diseñar la UX/UI de las vistas de monitoreo y detalle.",
+            "Desarrollar el frontend e integrarlo con los servicios del backend.",
+            "Resolver estados reales de carga, búsqueda, datos y suscripción.",
           ],
-          editorNote:
-            "Añade aquí: wireframes, prototipo, capturas del frontend y decisiones de rendimiento para baja conectividad.",
+          decisions: [
+            "Mantener el mapa como punto de entrada sin convertirlo en la única forma de encontrar información.",
+            "Conectar mapa, perfil, datos y suscripción alrededor del mismo waterpoint.",
+            "Validar posteriormente el producto implementado para observar fricciones que un prototipo podía ocultar.",
+          ],
         },
         {
           id: "test",
           phase: "Validar",
-          title: "Contrastar la interfaz con modelos mentales reales",
+          title:
+            "Evaluar el producto implementado y encontrar dónde no coincidía con el usuario",
           summary:
-            "Analicé y prioricé resultados de pruebas de usabilidad con usuarios institucionales.",
+            "Diseñé el protocolo de la prueba final y analicé sus resultados; las sesiones fueron moderadas por mi supervisor con usuarios institucionales.",
           narrative: [
-            "Las pruebas permitieron identificar patrones de interacción y diferencias entre la lógica del sistema y la forma en que los usuarios esperaban encontrar o interpretar la información.",
-            "Los hallazgos se transformaron en propuestas de mejora priorizadas para navegación, comprensión y uso del mapa.",
+            "La evaluación comenzó con ocho participantes de perfiles High-Level Government, Expert Government y NGO. El protocolo incluyó 14 tareas, think-aloud, SUS, heatmaps y una entrevista posterior. Algunas tareas contaron finalmente con siete observaciones por una omisión durante una sesión y por el retiro posterior de un participante.",
+            "La prueba mostró una experiencia desigual. El perfil del waterpoint, los pronósticos y la biomasa se percibieron como información especialmente útil, pero aparecieron fricciones importantes en el filtro de históricos, las suscripciones y la generación de rutas. Ningún participante que llegó a la tarea de rutas pudo completarla de forma independiente.",
+            "Los SUS promedio fueron 70 para High-Level Government, 60,8 para Expert Government y 67,5 para NGO. Más que reducirlos a una única cifra, utilizamos las tareas, verbalizaciones y heatmaps para localizar problemas concretos y redactar un backlog de mejoras.",
           ],
           activities: [
-            "Analizar comportamiento y verbalizaciones.",
-            "Agrupar patrones por modelo mental.",
-            "Priorizar mejoras según impacto y recurrencia.",
+            "Diseñar el protocolo, tareas, métricas y estructura de la evaluación.",
+            "Analizar grabaciones, resultados de tareas, SUS, heatmaps y entrevistas.",
+            "Identificar patrones de comportamiento y diferencias con el modelo mental del sistema.",
+            "Redactar y priorizar recomendaciones de UX.",
           ],
-          editorNote:
-            "Añade aquí: participantes, tareas, métricas, matriz de hallazgos y un ejemplo de cambio derivado de la prueba.",
+          decisions: [
+            "Hacer que acciones esperadas —como clicar el nombre de un punto— respondieran al modelo mental observado.",
+            "Simplificar el filtrado histórico y hacer más visible el estado de las suscripciones.",
+            "Rediseñar el flujo de rutas siguiendo patrones conocidos de origen y destino.",
+            "Priorizar claridad y feedback antes de añadir nuevas funciones.",
+          ],
+          media: [
+            {
+              src: "/images/projects/waterpoints-monitoring/usability-task-results.webp",
+              alt: "Tabla de resultados de catorce tareas de usabilidad del sistema Waterpoints Monitoring, mostrando tiempo estimado y real, éxito, errores no críticos, errores críticos y cantidad de participantes.",
+              caption:
+                "Resultados de las 14 tareas del protocolo: la evaluación permitió identificar diferencias fuertes entre tareas que funcionaban con claridad y flujos con errores críticos, especialmente rutas y gestión de suscripciones.",
+              width: 681,
+              height: 317,
+            },
+          ],
         },
         {
           id: "deliver",
           phase: "Entregar",
-          title: "Documentar decisiones para sostener la evolución",
+          title:
+            "Separar lo implementado de lo que el contexto no permitió completar",
           summary:
-            "El resultado conectó investigación, diseño y frontend en una base común para iterar.",
+            "La plataforma y las alertas por email llegaron a implementarse; la capa SMS y la siguiente iteración UX quedaron pendientes por restricciones institucionales y de recursos.",
           narrative: [
-            "Además de la plataforma, el valor del proceso estuvo en dejar una lectura compartida de necesidades y hallazgos para que el equipo pudiera priorizar mejoras posteriores.",
-            "Una próxima medición debería incluir rendimiento en conexiones reales, frecuencia de consulta y tiempo para completar decisiones críticas.",
+            "El sistema web quedó implementado y permitió consultar y suscribirse a información sobre puntos de agua. Las notificaciones por email también llegaron a formar parte de la solución para usuarios institucionales.",
+            "La propuesta SMS respondía directamente a las condiciones de conectividad identificadas con pastoralistas, pero su despliegue requería autorización gubernamental. Ese permiso no llegó a concretarse y, al mismo tiempo, el proyecto perdió los recursos necesarios para continuar.",
+            "El análisis final produjo recomendaciones específicas sobre búsqueda, navegación, rutas, históricos, perfiles y suscripciones, pero no hubo un nuevo ciclo de desarrollo para implementarlas y volver a medir. Por eso el caso termina con un backlog validado, no con una falsa historia de optimización completa.",
           ],
           activities: [
-            "Entregar mejoras de interfaz y frontend.",
-            "Compartir hallazgos priorizados con el equipo.",
-            "Proponer oportunidades para futuras iteraciones.",
+            "Entregar la experiencia web y el frontend del producto.",
+            "Consolidar recomendaciones derivadas de la prueba final.",
+            "Documentar el concepto de alertas de baja conectividad.",
+            "Compartir limitaciones y oportunidades pendientes con el equipo.",
           ],
-          editorNote:
-            "Añade aquí: impacto posterior, métricas técnicas, testimonios del equipo y roadmap.",
+          decisions: [
+            "Mantener claramente diferenciadas las funcionalidades implementadas de las propuestas que quedaron pendientes.",
+            "Tratar permisos, infraestructura y relaciones institucionales como restricciones reales del diseño.",
+            "Dejar las recomendaciones de usabilidad documentadas aunque no existiera presupuesto para una siguiente iteración.",
+          ],
         },
       ],
       reflection:
-        "Este proyecto reforzó que una interfaz geográfica no se diseña desde el mapa, sino desde las decisiones que cada persona debe tomar con él.",
-      editorChecklist: [
-        "Confirmar tecnologías exactas usadas en el frontend.",
-        "Añadir números de participantes y perfiles de las pruebas.",
-        "Mostrar cómo se contempló la baja conectividad en código y diseño.",
-        "Explicar un modelo mental que cambió una decisión de interfaz.",
-      ],
+        "Este proyecto reforzó que diseñar para baja conectividad no siempre significa hacer una interfaz más liviana: a veces significa elegir otro canal. También me mostró que una solución puede ser deseable y técnicamente viable, pero quedar limitada por permisos, recursos y relaciones institucionales. Esas condiciones también forman parte del sistema que diseñamos.",
+      editorChecklist: [],
     },
     {
       slug: "aclimate-redesign",
