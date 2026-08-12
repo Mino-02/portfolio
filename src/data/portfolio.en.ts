@@ -9,7 +9,14 @@ import type {
 
 type StepTranslation = Pick<
   ProcessStep,
-  "phase" | "title" | "summary" | "narrative" | "activities" | "decisions" | "media" | "editorNote"
+  | "phase"
+  | "title"
+  | "summary"
+  | "narrative"
+  | "activities"
+  | "decisions"
+  | "media"
+  | "editorNote"
 >;
 
 type ProjectTranslation = Pick<
@@ -805,4 +812,8 @@ export const processPrinciples: ProcessPrinciple[] = [
   },
 ];
 
-export const portfolioEn = { profile, projects, processPrinciples } satisfies PortfolioData;
+export const portfolioEn = {
+  profile,
+  projects,
+  processPrinciples,
+} satisfies PortfolioData;

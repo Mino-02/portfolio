@@ -60,8 +60,10 @@ export default async function HomePage({ params }: HomePageProps) {
         <div className="shell hero-grid">
           <div className="hero-copy">
             <p className="availability-pill">
-              <span aria-hidden="true" />
-              {profile.availability}
+              <span className="availability-pill__dot" aria-hidden="true" />
+              <span className="availability-pill__text">
+                {profile.availability}
+              </span>
             </p>
             <p className="hero-eyebrow">{dictionary.home.heroEyebrow}</p>
             <h1 id="hero-title">
@@ -93,7 +95,10 @@ export default async function HomePage({ params }: HomePageProps) {
           <HeroArtifact locale={locale} />
         </div>
 
-        <dl className="shell hero-metrics" aria-label={dictionary.home.metricsAria}>
+        <dl
+          className="shell hero-metrics"
+          aria-label={dictionary.home.metricsAria}
+        >
           {profile.metrics.map((metric) => (
             <div className="hero-metric" key={metric.label}>
               <strong>{metric.value}</strong>
@@ -106,7 +111,11 @@ export default async function HomePage({ params }: HomePageProps) {
         </dl>
       </section>
 
-      <section className="projects-section" id="projects" aria-labelledby="projects-title">
+      <section
+        className="projects-section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
         <div className="shell">
           <SectionHeading
             id="projects-title"
@@ -119,13 +128,21 @@ export default async function HomePage({ params }: HomePageProps) {
 
           <div className="projects-grid">
             {projects.map((project) => (
-              <ProjectCard key={project.slug} project={project} locale={locale} />
+              <ProjectCard
+                key={project.slug}
+                project={project}
+                locale={locale}
+              />
             ))}
           </div>
         </div>
       </section>
 
-      <section className="process-section" id="process" aria-labelledby="process-title">
+      <section
+        className="process-section"
+        id="process"
+        aria-labelledby="process-title"
+      >
         <div className="shell">
           <SectionHeading
             id="process-title"
@@ -148,14 +165,21 @@ export default async function HomePage({ params }: HomePageProps) {
             ))}
           </ol>
 
-          <div className="process-bridge" aria-label={dictionary.home.process.bridgeAria}>
+          <div
+            className="process-bridge"
+            aria-label={dictionary.home.process.bridgeAria}
+          >
             <div>
               <ResearchIcon />
               {dictionary.home.process.research}
             </div>
-            <div className="process-bridge__line" aria-hidden="true"><i /></div>
+            <div className="process-bridge__line" aria-hidden="true">
+              <i />
+            </div>
             <p>{dictionary.home.process.bridgeText}</p>
-            <div className="process-bridge__line" aria-hidden="true"><i /></div>
+            <div className="process-bridge__line" aria-hidden="true">
+              <i />
+            </div>
             <div>
               <CodeIcon />
               {dictionary.home.process.frontend}
@@ -164,18 +188,31 @@ export default async function HomePage({ params }: HomePageProps) {
         </div>
       </section>
 
-      <section className="about-section" id="about" aria-labelledby="about-title">
+      <section
+        className="about-section"
+        id="about"
+        aria-labelledby="about-title"
+      >
         <div className="shell about-grid">
           <div className="about-intro">
             <p className="section-index">{dictionary.home.about.index}</p>
             <h2 id="about-title">{dictionary.home.about.title}</h2>
             <div className="about-copy">
-              {profile.about.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              {profile.about.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
             </div>
-            <a className="text-link" href={profile.linkedin} target="_blank" rel="noreferrer">
+            <a
+              className="text-link"
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+            >
               {dictionary.home.about.linkedin}
               <ArrowUpRightIcon />
-              <span className="sr-only">{dictionary.home.about.externalNote}</span>
+              <span className="sr-only">
+                {dictionary.home.about.externalNote}
+              </span>
             </a>
           </div>
 
@@ -193,11 +230,18 @@ export default async function HomePage({ params }: HomePageProps) {
         </div>
       </section>
 
-      <section className="capabilities-section" aria-labelledby="capabilities-title">
+      <section
+        className="capabilities-section"
+        aria-labelledby="capabilities-title"
+      >
         <div className="shell capabilities-panel">
           <div className="capabilities-intro">
-            <p className="section-index">{dictionary.home.capabilities.index}</p>
-            <h2 id="capabilities-title">{dictionary.home.capabilities.title}</h2>
+            <p className="section-index">
+              {dictionary.home.capabilities.index}
+            </p>
+            <h2 id="capabilities-title">
+              {dictionary.home.capabilities.title}
+            </h2>
             <p>{dictionary.home.capabilities.intro}</p>
           </div>
           <div className="capabilities-grid">
@@ -208,7 +252,9 @@ export default async function HomePage({ params }: HomePageProps) {
                   <h3>{group.title}</h3>
                 </div>
                 <ul>
-                  {group.items.map((item) => <li key={item}>{item}</li>)}
+                  {group.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
                 </ul>
               </article>
             ))}
@@ -216,7 +262,11 @@ export default async function HomePage({ params }: HomePageProps) {
         </div>
       </section>
 
-      <section className="experience-section" id="experience" aria-labelledby="experience-title">
+      <section
+        className="experience-section"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
         <div className="shell">
           <SectionHeading
             id="experience-title"
@@ -228,9 +278,14 @@ export default async function HomePage({ params }: HomePageProps) {
 
           <div className="experience-grid">
             <div>
-              <p className="timeline-label">{dictionary.home.experience.professional}</p>
+              <p className="timeline-label">
+                {dictionary.home.experience.professional}
+              </p>
               {profile.experience.map((item) => (
-                <article className="timeline-item" key={`${item.period}-${item.role}`}>
+                <article
+                  className="timeline-item"
+                  key={`${item.period}-${item.role}`}
+                >
                   <time>{item.period}</time>
                   <div>
                     <h3>{item.role}</h3>
@@ -241,8 +296,13 @@ export default async function HomePage({ params }: HomePageProps) {
               ))}
             </div>
 
-            <aside className="education-block" aria-label={dictionary.home.experience.educationAria}>
-              <p className="timeline-label">{dictionary.home.experience.education}</p>
+            <aside
+              className="education-block"
+              aria-label={dictionary.home.experience.educationAria}
+            >
+              <p className="timeline-label">
+                {dictionary.home.experience.education}
+              </p>
               {profile.education.map((item) => (
                 <article key={item.title}>
                   <time>{item.period}</time>
@@ -250,7 +310,10 @@ export default async function HomePage({ params }: HomePageProps) {
                   <p>{item.place}</p>
                 </article>
               ))}
-              <a className="button button--dark" href={`mailto:${profile.email}`}>
+              <a
+                className="button button--dark"
+                href={`mailto:${profile.email}`}
+              >
                 {dictionary.home.experience.cta}
                 <ArrowUpRightIcon />
               </a>

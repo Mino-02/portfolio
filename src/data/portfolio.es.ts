@@ -9,7 +9,10 @@ export const profile = {
   phone: "+57 305 766 5223",
   linkedin: "https://www.linkedin.com/in/sebastian-lopez-uxui/",
   github: "https://github.com/Mino-02",
-  photo: null as null | { src: string; alt: string },
+  photo: {
+    src: "/images/profile/sebastian.webp",
+    alt: "Sebastián López, diseñador UX/UI y desarrollador frontend",
+  },
   cv: "/cv/Sebastian_Lopez_Astudillo_CV_ES.docx",
   headline: "Diseño decisiones que las personas pueden usar.",
   intro:
@@ -28,7 +31,11 @@ export const profile = {
       detail: "planeadas, moderadas o analizadas",
     },
     { value: "4", label: "frontends", detail: "con responsabilidad principal" },
-    { value: "5", label: "países", detail: "con usuarios o equipos de proyecto" },
+    {
+      value: "5",
+      label: "países",
+      detail: "con usuarios o equipos de proyecto",
+    },
   ] satisfies Metric[],
   principles: [
     {
@@ -798,4 +805,8 @@ export const processPrinciples = [
   },
 ];
 
-export const portfolioEs = { profile, projects, processPrinciples } satisfies PortfolioData;
+export const portfolioEs = {
+  profile,
+  projects,
+  processPrinciples,
+} satisfies PortfolioData;

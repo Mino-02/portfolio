@@ -15,8 +15,11 @@
   --line: rgba(22, 23, 19, 0.2);
   --line-light: rgba(255, 249, 239, 0.24);
   --shadow: 0 24px 70px rgba(20, 24, 18, 0.14);
-  --font-sans: Arial, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --font-sans:
+    Arial, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display:
+    "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia,
+    serif;
   --header-height: 82px;
 }
 
@@ -320,7 +323,10 @@ select {
   font-size: 0.87rem;
   font-weight: 800;
   line-height: 1;
-  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease;
 }
 
 .button:hover {
@@ -372,7 +378,6 @@ select {
 .hero-section {
   position: relative;
   overflow: clip;
-  padding: 64px 0 0;
 }
 
 .hero-section::before {
@@ -393,6 +398,7 @@ select {
 }
 
 .hero-copy {
+  min-width: 0;
   padding: 32px 0 52px;
 }
 
@@ -400,7 +406,7 @@ select {
   width: fit-content;
   max-width: 100%;
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 9px;
   margin-bottom: 36px;
   padding: 9px 13px;
@@ -409,15 +415,23 @@ select {
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 700;
+  line-height: 1.35;
 }
 
-.availability-pill > span {
+.availability-pill__dot {
   width: 8px;
   height: 8px;
   flex: 0 0 auto;
+  margin-top: 0.28em;
   border-radius: 50%;
   background: var(--clay);
   box-shadow: 0 0 0 5px rgba(197, 94, 57, 0.13);
+}
+
+.availability-pill__text {
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-wrap: break-word;
 }
 
 .hero-eyebrow {
@@ -430,7 +444,7 @@ select {
   font-size: clamp(4.05rem, 7.1vw, 7.4rem);
   font-weight: 700;
   letter-spacing: -0.065em;
-  line-height: 0.84;
+  line-height: 0.96;
 }
 
 .hero-copy h1 em {
@@ -531,7 +545,6 @@ select {
   background: var(--forest-deep);
 }
 
-
 .artifact-portrait {
   position: relative;
   aspect-ratio: 460 / 520;
@@ -581,42 +594,6 @@ select {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-}
-
-.artifact-card--note {
-  left: -26px;
-  bottom: 25px;
-  width: 305px;
-  padding: 22px;
-  border-radius: 20px;
-  background: var(--clay);
-  color: var(--paper-light);
-  transform: rotate(-3deg);
-}
-
-.artifact-card--note p {
-  margin-top: 8px;
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 650;
-  line-height: 1.06;
-}
-
-.artifact-path {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-top: 18px;
-  color: var(--paper-light);
-  font-size: 0.55rem;
-  font-weight: 800;
-  letter-spacing: 0.09em;
-}
-
-.artifact-path i {
-  flex: 1;
-  height: 1px;
-  background: rgba(255, 249, 239, 0.5);
 }
 
 .artifact-seal {
@@ -710,8 +687,10 @@ select {
 /* Shared section heading */
 .section-heading {
   display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
-  gap: 48px;
+  grid-template-columns:
+    minmax(210px, 0.55fr)
+    minmax(0, 1.45fr);
+  gap: clamp(32px, 4vw, 52px);
   align-items: end;
   margin-bottom: 64px;
   padding-bottom: 28px;
@@ -741,20 +720,27 @@ select {
 }
 
 .section-heading__content {
+  min-width: 0;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(250px, 0.75fr);
-  gap: 30px;
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(240px, 0.65fr);
+  gap: clamp(26px, 3vw, 40px);
   align-items: end;
 }
 
 .section-heading :is(h1, h2) {
-  font-size: clamp(2.8rem, 5.5vw, 5.4rem);
+  min-width: 0;
+  font-size: clamp(2.75rem, 4.1vw, 4.65rem);
   font-weight: 650;
-  letter-spacing: -0.055em;
-  line-height: 0.95;
+  letter-spacing: -0.05em;
+  line-height: 0.96;
+  text-wrap: balance;
 }
 
 .section-heading p {
+  max-width: 34ch;
+  justify-self: end;
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.6;
@@ -789,7 +775,10 @@ select {
   border: 1px solid var(--line-light);
   border-radius: 24px;
   background: rgba(255, 249, 239, 0.045);
-  transition: transform 220ms ease, background-color 220ms ease, border-color 220ms ease;
+  transition:
+    transform 220ms ease,
+    background-color 220ms ease,
+    border-color 220ms ease;
 }
 
 .project-card:hover {
@@ -937,7 +926,6 @@ select {
   line-height: 1.3;
 }
 
-
 .projects-section--archive {
   margin-top: 0;
   padding-top: 84px;
@@ -1015,7 +1003,9 @@ select {
 
 .process-bridge {
   display: grid;
-  grid-template-columns: auto minmax(100px, 1fr) minmax(280px, 1.35fr) minmax(100px, 1fr) auto;
+  grid-template-columns:
+    auto minmax(100px, 1fr) minmax(280px, 1.35fr) minmax(100px, 1fr)
+    auto;
   gap: 22px;
   align-items: center;
   margin-top: 42px;
@@ -1363,7 +1353,11 @@ select {
   height: 420px;
   border: 2px solid var(--ink);
   border-radius: 50%;
-  box-shadow: 0 0 0 34px transparent, 0 0 0 36px var(--ink), 0 0 0 78px transparent, 0 0 0 80px var(--ink);
+  box-shadow:
+    0 0 0 34px transparent,
+    0 0 0 36px var(--ink),
+    0 0 0 78px transparent,
+    0 0 0 80px var(--ink);
   opacity: 0.22;
 }
 
@@ -1470,7 +1464,9 @@ select {
   place-items: center;
   border: 1px solid var(--line-light);
   border-radius: 50%;
-  transition: background-color 160ms ease, color 160ms ease;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
 }
 
 .social-links a:hover {
@@ -2254,16 +2250,14 @@ select {
 /* Responsive */
 @media (max-width: 1120px) {
   .hero-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.8fr);
-    gap: 52px;
+    grid-template-columns:
+      minmax(0, 1.08fr)
+      minmax(360px, 0.92fr);
+    gap: clamp(52px, 7vw, 78px);
   }
 
   .hero-artifact {
     min-height: 590px;
-  }
-
-  .artifact-card--note {
-    left: -10px;
   }
 
   .project-card {
@@ -2308,6 +2302,35 @@ select {
 
   .case-step__heading > strong {
     grid-column: 2;
+  }
+
+  .section-heading {
+  grid-template-columns:
+    minmax(180px, 0.48fr)
+    minmax(0, 1.52fr);
+  gap: 32px;
+}
+
+.section-heading__content {
+  grid-template-columns:
+    minmax(0, 1.25fr)
+    minmax(220px, 0.75fr);
+  gap: 28px;
+}
+
+.section-heading :is(h1, h2) {
+  font-size: clamp(2.75rem, 4.2vw, 3.75rem);
+}
+}
+
+@media (min-width: 901px) and (max-width: 1120px) {
+  .hero-copy {
+    padding-right: 18px;
+  }
+
+  .hero-copy h1,
+  .hero-intro {
+    max-width: 100%;
   }
 }
 
@@ -2569,16 +2592,6 @@ select {
 
   .artifact-topline span:last-child {
     display: none;
-  }
-
-  .artifact-card--note {
-    width: 245px;
-    bottom: 0;
-    padding: 18px;
-  }
-
-  .artifact-card--note p {
-    font-size: 1.1rem;
   }
 
   .artifact-seal {
@@ -2862,7 +2875,10 @@ select {
   font-weight: 850;
   letter-spacing: 0.08em;
   line-height: 1;
-  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
 }
 
 .language-switcher a:hover,

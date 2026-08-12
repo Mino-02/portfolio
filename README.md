@@ -53,8 +53,6 @@ npm run build
 - Soporte para `prefers-reduced-motion`.
 - Sin animaciones automáticas ni contenido parpadeante.
 
-Antes de publicar, prueba ambos idiomas con teclado, VoiceOver o NVDA, Lighthouse, axe DevTools y al menos un dispositivo móvil real.
-
 ## Estructura principal
 
 ```text
