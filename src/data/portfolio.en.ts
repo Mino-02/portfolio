@@ -376,7 +376,7 @@ const projectTranslations: Record<string, ProjectTranslation> = {
       },
     },
     reflection:
-      "This project left me with a distinction I now apply to other products: completing a task does not necessarily mean understanding it. Designing critical information requires validating both operational usability and content comprehension, and turning research findings into rules the system itself can sustain.",
+      "I learned to separate task completion from actual understanding. When information is critical, usability should also measure how well people can interpret it and act correctly.",
     editorChecklist: [],
   },
   "bulletin-builder": {
@@ -576,7 +576,7 @@ const projectTranslations: Record<string, ProjectTranslation> = {
       },
     },
     reflection:
-      "This project confirmed that a solution does not end when the final user understands the design. We also need to design the conditions that allow the people producing the service to preserve that clarity. My contribution connected research, UX decisions, and frontend so the evidence would not be lost between insight and product.",
+      "I learned that a solution does not end when users understand the design; the people producing it also need to preserve that clarity. Connecting research, UX, and frontend was key to making that possible.",
     editorChecklist: [
       "Add visual evidence from the initial Guatemala research.",
       "Show at least one bulletin decision that later became a Builder constraint.",
@@ -831,7 +831,7 @@ const projectTranslations: Record<string, ProjectTranslation> = {
       },
     },
     reflection:
-      "This project reinforced that designing for low connectivity does not always mean making a lighter interface; sometimes it means choosing a different channel altogether. It also showed me that a solution can be desirable and technically feasible while still being constrained by permissions, resources, and institutional relationships. Those conditions are also part of the system we design.",
+      "I learned that designing for low connectivity sometimes means choosing a different channel, not simplifying an interface. Permissions, resources, and institutions can also define how far a solution can go.",
     editorChecklist: [],
   },
   "aclimate-redesign": {
@@ -1052,7 +1052,7 @@ const projectTranslations: Record<string, ProjectTranslation> = {
       },
     },
     reflection:
-      "AClimate taught me that scaling a product does not mean making it uniform. When the same platform serves different countries, crops, and decisions, the challenge is maintaining a coherent interaction logic while information, language, and priorities change with context.",
+      "I learned that scaling does not mean making everything uniform. A multi-country product needs a shared logic and enough flexibility for information, language, and priorities to change with context.",
     editorChecklist: [],
   },
 };

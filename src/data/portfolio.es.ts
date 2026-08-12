@@ -355,7 +355,7 @@ export const projects = (
         },
       ],
       reflection:
-        "Este proyecto me dejó una distinción que ahora aplico en otros productos: completar una tarea no significa necesariamente comprenderla. Diseñar para información crítica exige validar tanto la usabilidad operativa como la comprensión del contenido, y convertir los hallazgos de investigación en reglas que el propio sistema pueda sostener.",
+        "Aprendí a separar completar una tarea de comprenderla. Cuando la información es crítica, la usabilidad también debe medirse por cuánto ayuda a interpretar y actuar correctamente.",
       editorChecklist: [],
     },
     {
@@ -566,7 +566,7 @@ export const projects = (
         },
       ],
       reflection:
-        "Este proyecto me confirmó que una solución no termina cuando el usuario final entiende el diseño. También hay que diseñar las condiciones para que quienes producen el servicio puedan sostener esa claridad. Mi aporte conectó investigación, decisiones de UX y frontend para que la evidencia no se perdiera al pasar del hallazgo al producto.",
+        "Aprendí que una solución no termina cuando el usuario entiende el diseño: también hay que facilitar que quienes la producen puedan sostener esa claridad. Conectar investigación, UX y frontend fue clave para lograrlo.",
       editorChecklist: [
         "Añadir evidencia visual de la investigación inicial en Guatemala.",
         "Mostrar al menos una decisión del boletín que luego se convirtió en una restricción del generador.",
@@ -833,7 +833,7 @@ export const projects = (
         },
       ],
       reflection:
-        "Este proyecto reforzó que diseñar para baja conectividad no siempre significa hacer una interfaz más liviana: a veces significa elegir otro canal. También me mostró que una solución puede ser deseable y técnicamente viable, pero quedar limitada por permisos, recursos y relaciones institucionales. Esas condiciones también forman parte del sistema que diseñamos.",
+        "Aprendí que diseñar para baja conectividad a veces significa elegir otro canal, no simplificar una interfaz. También que permisos, recursos e instituciones pueden definir hasta dónde llega una solución.",
       editorChecklist: [],
     },
     {
@@ -1065,7 +1065,7 @@ export const projects = (
         },
       ],
       reflection:
-        "AClimate me enseñó que escalar un producto no significa uniformarlo. Cuando una misma plataforma sirve a países, cultivos y decisiones diferentes, el reto está en mantener una lógica de interacción coherente mientras la información, el lenguaje y las prioridades cambian con el contexto.",
+        "Aprendí que escalar no significa uniformar. Un producto multipaís necesita una lógica común, pero suficiente flexibilidad para que información, lenguaje y prioridades cambien según el contexto.",
       editorChecklist: [],
     },
   ] satisfies Project[]
