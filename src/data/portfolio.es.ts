@@ -840,41 +840,48 @@ export const projects = (
       slug: "aclimate-redesign",
       index: "04",
       title: "AClimate · Rediseño",
-      eyebrow: "Plataforma multipaís · UX Audit + Responsive UI",
-      year: "2024",
+      eyebrow: "Ecosistema multipaís · UX Research + UX/UI + Frontend",
+      year: "2024 — hoy",
       accent: "sand",
       cover: "/images/projects/aclimate-redesign/cover.webp",
       coverAlt:
-        "Panel de datos climáticos de Aclímate con filtros por fecha y gráficas de temperatura mínima y precipitación.",
+        "Interfaz de AClimate con datos climáticos, filtros temporales y visualizaciones para apoyar decisiones agroclimáticas.",
       summary:
-        "Evaluación y rediseño de una plataforma agroclimática multipaís para simplificar información técnica, mapas, gráficas y paneles de monitoreo.",
+        "Rediseño y evolución de un ecosistema de servicios climáticos para transformar información técnica y diversa por país en experiencias más claras, contextualizadas y orientadas a decisiones.",
       shortOutcome:
-        "La propuesta incorporó una experiencia responsive y mejoras derivadas de evaluaciones con usuarios.",
+        "Una experiencia base más simple y flexible que sigue evolucionando mediante investigación e implementaciones específicas por territorio.",
       challenge:
-        "La plataforma reunía información técnica valiosa, pero la densidad, la navegación y la lectura de visualizaciones podían aumentar el esfuerzo de interpretación.",
+        "Después de años de crecimiento, AClimate reunía grandes volúmenes de información técnica, visualizaciones y módulos distintos por país. El reto era reducir la carga de interpretación sin eliminar la profundidad científica ni imponer la misma experiencia a todos los contextos.",
       response:
-        "Participé en la evaluación, el rediseño y la implementación frontend de recomendaciones, además de capacitaciones presenciales para usuarios en la Amazonía colombiana.",
-      role: "Evaluación UX, rediseño UI, recomendaciones y apoyo frontend",
-      team: "Equipo agroclimático multipaís",
-      context: "Información técnica · Mapas y gráficas · Uso responsive",
+        "Participé en la investigación con usuarios finales, lideré principalmente el rediseño UX/UI y colaboré en la implementación frontend. Las siguientes iteraciones permitieron adaptar la experiencia a contextos como Colombia y Amazonía sin perder una base común.",
+      role: "Investigación con usuarios finales · Liderazgo UX/UI · Frontend colaborativo · Validación e iteración",
+      team: "Equipo multidisciplinario de producto, desarrollo, clima y aliados regionales",
+      context:
+        "Ecosistema multipaís · Información climática y agroclimática · Técnicos, extensionistas y productores",
       methods: [
-        "Evaluación con usuarios",
-        "Revisión heurística",
-        "Arquitectura de información",
-        "Diseño responsive",
-        "Capacitación",
+        "Entrevistas con productores",
+        "Síntesis de investigación",
+        "Requerimientos funcionales",
+        "Prototipado",
+        "Pruebas de usabilidad",
+        "Iteración por territorio",
       ],
       stack: ["Frontend web", "Diseño responsive", "Mapas y gráficas"],
       metrics: [
-        { value: "Multipaís", label: "alcance del producto" },
-        { value: "Responsive", label: "criterio transversal" },
-        { value: "3", label: "familias: mapas, gráficas y paneles" },
-        { value: "Amazonía", label: "capacitaciones presenciales" },
+        { value: "10", label: "países · LATAM y África" },
+        { value: "6", label: "etapas del flujo informativo" },
+        { value: "2", label: "contextos de investigación directa" },
+        { value: "2024 → hoy", label: "evolución continua" },
       ],
       links: [
         {
-          label: "Ver plataforma",
-          href: "https://amazonia.aclimate.org",
+          label: "Ver AClimate",
+          href: "https://www.aclimate.org/",
+          kind: "live",
+        },
+        {
+          label: "Ver Amazonía",
+          href: "https://amazonia.aclimate.org/",
           kind: "live",
         },
       ],
@@ -882,120 +889,184 @@ export const projects = (
         {
           id: "discover",
           phase: "Descubrir",
-          title: "Evaluar la experiencia existente",
+          title:
+            "Entender qué información ayuda realmente a tomar una decisión",
           summary:
-            "El rediseño comenzó identificando dónde la información técnica y la estructura de la interfaz aumentaban la carga de uso.",
+            "El rediseño comenzó preguntando menos qué datos podía mostrar AClimate y más qué necesitaban comprender las personas para actuar.",
           narrative: [
-            "La plataforma debía servir a diferentes países y perfiles, por lo que era necesario distinguir problemas locales de patrones compartidos.",
-            "La evaluación consideró navegación, comprensión de contenido, lectura de mapas y gráficas y comportamiento en distintos tamaños de pantalla.",
+            "AClimate llevaba años acumulando históricos, pronósticos, modelos, mapas y funcionalidades específicas por país. Esa profundidad era valiosa, pero también podía producir una experiencia densa y difícil de interpretar para usuarios que no trabajan diariamente con información climática.",
+            "En Colombia participé en la planeación de preguntas enfocadas en usuarios finales y moderé entrevistas y sesiones con productores de distintos sistemas productivos. Las conversaciones más técnicas con gremios fueron lideradas principalmente por otros compañeros. También participé en el análisis y la síntesis de parte de los hallazgos.",
+            "La investigación exploró no solo qué información necesitaban, sino cómo la comprendían mejor: texto, mapas, gráficas, categorías, colores y distintos niveles de detalle.",
           ],
           activities: [
-            "Revisar recorridos y componentes existentes.",
-            "Observar dificultades en evaluaciones con usuarios.",
-            "Identificar inconsistencias y puntos de alta carga cognitiva.",
+            "Planear parte del protocolo de investigación enfocado en productores.",
+            "Moderar entrevistas y conversaciones con usuarios finales.",
+            "Explorar necesidades de información y formas de representación comprensibles.",
+            "Analizar y sintetizar hallazgos junto al equipo.",
           ],
-          editorNote:
-            "Añade aquí: alcance de la evaluación, heurísticas usadas, participantes, pantallas auditadas y evidencia de los principales problemas.",
+          decisions: [
+            "Organizar la experiencia alrededor de decisiones y necesidades de información, no de la estructura técnica de los datos.",
+            "No asumir que una gráfica o un mapa eran automáticamente más comprensibles que una explicación textual.",
+            "Separar necesidades compartidas de requerimientos específicos de cada territorio.",
+          ],
+          media: [
+            {
+              src: "/images/projects/aclimate-redesign/legacy-aclimate-map.webp",
+              alt: "Versión anterior de AClimate Colombia mostrando un mapa de áreas con pronósticos agroclimáticos y una navegación superior con múltiples módulos técnicos.",
+              caption:
+                "Punto de partida del rediseño: AClimate ya concentraba información valiosa, pero su crecimiento había producido una experiencia densa y con poca jerarquía para usuarios no especializados.",
+              width: 948,
+              height: 533,
+            },
+            {
+              src: "/images/projects/aclimate-redesign/field-interview.webp",
+              alt: "Entrevista de campo entre un investigador y un participante, realizada durante el proceso de investigación con usuarios de AClimate.",
+              caption:
+                "Entrevista en campo con usuarios finales para entender qué información necesitan, cómo interpretan los mensajes climáticos y qué representaciones les resultan más comprensibles.",
+              width: 1200,
+              height: 1600,
+            },
+          ],
         },
         {
           id: "define",
           phase: "Definir",
-          title: "Ordenar la complejidad por prioridad de decisión",
+          title: "Reducir densidad sin reducir utilidad",
           summary:
-            "Los problemas se organizaron según su impacto en comprensión, navegación y monitoreo.",
+            "La síntesis convirtió necesidades de usuarios y requerimientos técnicos en una jerarquía capaz de mostrar la profundidad adecuada en el momento adecuado.",
           narrative: [
-            "La definición buscó que la jerarquía de la interfaz reflejara qué información necesitaba una persona primero, en lugar de reproducir la estructura técnica del sistema.",
-            "También se estableció el comportamiento responsive como una condición del producto, no como una adaptación final.",
+            "Los hallazgos se combinaron con requerimientos funcionales y no funcionales definidos junto al equipo. Una parte importante del trabajo consistió en distinguir qué información debía ser prioritaria y qué podía aparecer progresivamente según la tarea.",
+            "La lógica del producto podía entenderse como una cadena: histórico para comprender qué suele ocurrir, monitoreo para saber qué está pasando, pronóstico para anticipar, escenarios para interpretar qué significa, recomendaciones para decidir qué hacer y finalmente acciones concretas.",
+            "No todos los países necesitaban todos esos elementos de la misma manera. La arquitectura debía permitir compartir patrones sin convertir AClimate en una única plantilla rígida.",
           ],
           activities: [
-            "Priorizar hallazgos por severidad e impacto.",
-            "Reorganizar contenidos y recorridos clave.",
-            "Definir reglas responsive para componentes críticos.",
+            "Sintetizar necesidades de usuarios y requerimientos junto al equipo.",
+            "Definir prioridades de información y niveles de detalle.",
+            "Reorganizar recorridos y jerarquías de contenido.",
+            "Distinguir elementos comunes de módulos específicos por país.",
           ],
-          editorNote:
-            "Añade aquí: matriz impacto/esfuerzo, nueva arquitectura, user flows y principios de rediseño.",
+          decisions: [
+            "Usar divulgación progresiva para evitar mostrar toda la complejidad al mismo tiempo.",
+            "Mantener una estructura común para navegación e interacción mientras el contenido cambia por contexto.",
+            "Hacer del comportamiento responsive una condición del producto desde el diseño.",
+          ],
         },
         {
           id: "ideate",
           phase: "Idear",
-          title: "Simplificar sin ocultar la profundidad técnica",
+          title: "Diseñar una base común sin uniformar los países",
           summary:
-            "Las alternativas se enfocaron en capas progresivas de información y visualizaciones más legibles.",
+            "La exploración visual buscó consistencia en cómo se navega y comprende AClimate, pero flexibilidad en qué información aparece.",
           narrative: [
-            "Los mapas, gráficas y paneles debían permitir una lectura rápida y, al mismo tiempo, conservar acceso al detalle cuando fuera necesario.",
-            "La exploración visual buscó consistencia entre países y flexibilidad para diferentes contenidos.",
+            "Colombia, por ejemplo, combina históricos, pronósticos y simulaciones productivas alrededor de estaciones. Amazonía necesita una lectura espacial del territorio, monitoreo y escenarios. Honduras incorpora variables e indicadores climáticos propios de su implementación.",
+            "La solución debía permitir que estos productos se sintieran parte del mismo ecosistema sin obligarlos a compartir exactamente las mismas pantallas, datos o recorridos.",
           ],
           activities: [
-            "Explorar jerarquías para tarjetas, filtros y leyendas.",
-            "Comparar patrones de visualización y detalle progresivo.",
-            "Definir comportamiento de componentes en móvil.",
+            "Explorar nuevas jerarquías para mapas, gráficas, filtros y contenido explicativo.",
+            "Comparar alternativas de representación para información climática compleja.",
+            "Diseñar patrones reutilizables capaces de admitir variaciones territoriales.",
+            "Definir comportamientos responsive para los componentes principales.",
           ],
-          editorNote:
-            "Añade aquí: exploraciones visuales, comparativas de gráficas, diseño de filtros y alternativas descartadas.",
+          decisions: [
+            "Buscar consistencia en patrones de interacción, no uniformidad en contenido.",
+            "Acompañar visualizaciones con contexto y microcopy cuando los datos por sí solos no eran suficientes.",
+            "Permitir que cada implementación priorizara módulos según sus usuarios y objetivos.",
+          ],
         },
         {
           id: "prototype",
           phase: "Prototipar",
-          title: "Conectar el sistema visual con casos reales",
+          title: "Convertir información técnica en una experiencia más guiada",
           summary:
-            "El rediseño se materializó en flujos y componentes responsive para datos agroclimáticos.",
+            "Lideré principalmente el rediseño UX/UI y lo llevamos a prototipos con datos y escenarios suficientemente realistas para evaluar la nueva jerarquía.",
           narrative: [
-            "Los prototipos debían representar contenido realista para comprobar si la simplificación se sostenía con volúmenes y casos reales.",
-            "La consistencia de componentes facilitó discutir cambios con desarrollo y preparar su implementación.",
+            "El trabajo visual redujo densidad, reorganizó filtros y contenidos y buscó que mapas y gráficas tuvieran una explicación más clara de qué muestran y para qué sirven.",
+            "El prototipo base fue evaluado con perfiles técnicos. Mi participación en esas sesiones no estuvo centrada en la moderación, sino principalmente en el diseño y en incorporar los resultados posteriormente.",
+            "Después, la interfaz pasó progresivamente a desarrollo. También participé en frontend, pero la implementación fue colaborativa con otros desarrolladores del equipo.",
           ],
           activities: [
-            "Prototipar mapas, gráficas y paneles de monitoreo.",
-            "Documentar estados y comportamiento responsive.",
-            "Revisar viabilidad con el equipo técnico.",
+            "Diseñar el rediseño principal de UX/UI.",
+            "Prototipar mapas, gráficas, filtros y recorridos clave.",
+            "Incorporar feedback proveniente de evaluaciones con perfiles técnicos.",
+            "Colaborar en la implementación frontend del nuevo diseño.",
           ],
-          editorNote:
-            "Añade aquí: antes/después, prototipo navegable, especificaciones y fragmentos del sistema de diseño.",
+          decisions: [
+            "Trabajar con contenido realista para comprobar que la simplificación soportara datos reales.",
+            "Diseñar componentes que pudieran reutilizarse y adaptarse entre implementaciones.",
+            "Resolver diseño y desarrollo de forma iterativa en lugar de tratar el frontend como una traducción final de Figma.",
+          ],
+          media: [
+            {
+              src: "/images/projects/aclimate-redesign/redesign-climate-data.webp",
+              alt: "Interfaz rediseñada de AClimate mostrando la sección de datos climáticos, con explicación contextual, selector temporal, mapa de precipitación, leyenda y controles geográficos.",
+              caption:
+                "El rediseño mantiene la profundidad de los datos, pero incorpora jerarquía, contexto y explicaciones para orientar la lectura antes de mostrar la visualización.",
+              width: 935,
+              height: 513,
+            },
+          ],
         },
         {
           id: "test",
           phase: "Validar",
-          title: "Incorporar recomendaciones de usuarios",
+          title:
+            "Evaluar cada territorio sin asumir que una solución es universal",
           summary:
-            "Las evaluaciones con usuarios orientaron ajustes de comprensión, visualización y navegación.",
+            "Después del rediseño base, nuevas oportunidades de proyecto permitieron seguir investigando y adaptando partes de AClimate según contextos concretos.",
           narrative: [
-            "La validación permitió revisar si los cambios reducían el esfuerzo para encontrar información y entender lo que mostraban mapas y gráficas.",
-            "Las recomendaciones se llevaron a mejoras de interfaz y a conversaciones de implementación con el equipo.",
+            "En Amazonía participé directamente en la planeación, moderación y análisis de evaluaciones con productores y comunidades indígenas. Allí exploramos cómo interpretaban escenarios climáticos, recomendaciones, mapas, categorías y colores antes de integrarlos en la plataforma.",
+            "Ese trabajo dio origen a una experiencia orientada a lectura espacial del territorio, donde un escenario climático no se presenta únicamente como un dato: se acompaña de características de la zona y recomendaciones comprensibles.",
+            "Honduras representa otra evolución territorial del ecosistema, con variables e indicadores propios. Mi participación allí fue menor y el proceso estuvo liderado principalmente por otro compañero; sus resultados sirven como evidencia de cómo la base del producto continúa adaptándose a distintos contextos.",
           ],
           activities: [
-            "Observar tareas clave de consulta y monitoreo.",
-            "Analizar comprensión de términos y visualizaciones.",
-            "Priorizar recomendaciones para implementación.",
+            "Planear pruebas con usuarios en el contexto amazónico.",
+            "Moderar sesiones con productores y comunidades indígenas.",
+            "Analizar comprensión de mapas, escenarios, colores y recomendaciones.",
+            "Traducir los hallazgos en cambios incorporados posteriormente a AClimate Amazonía.",
           ],
-          editorNote:
-            "Añade aquí: protocolo, participantes, hallazgos, métricas y cambios concretos entre versiones.",
+          decisions: [
+            "Validar las representaciones climáticas con las personas que deben interpretarlas antes de asumir su significado.",
+            "No transferir automáticamente convenciones visuales de un territorio a otro.",
+            "Usar cada implementación regional como una oportunidad para aprender y retroalimentar el ecosistema.",
+          ],
+          media: [
+            {
+              src: "/images/projects/aclimate-redesign/amazonia-climate-scenarios.webp",
+              alt: "Interfaz de escenarios climáticos de AClimate Amazonía mostrando selectores de departamento y comunidad, un mapa territorial y categorías de invierno, normal y verano.",
+              caption:
+                "La investigación en Amazonía ayudó a traducir pronósticos en escenarios territoriales más interpretables, combinando selección de comunidad, mapa, categorías visuales y posteriormente recomendaciones contextualizadas.",
+              width: 931,
+              height: 497,
+            },
+          ],
         },
         {
           id: "deliver",
-          phase: "Implementar y acompañar",
-          title: "Cerrar el ciclo con frontend y capacitación",
+          phase: "Evolucionar",
+          title: "Mantener un producto vivo que cambia con cada contexto",
           summary:
-            "Participé en la implementación frontend y en capacitaciones presenciales en la Amazonía colombiana.",
+            "Desde 2024 el rediseño ha seguido evolucionando mediante nuevas implementaciones, investigaciones y desarrollos territoriales.",
           narrative: [
-            "La implementación permitió resolver detalles de comportamiento que solo aparecen con datos y dispositivos reales.",
-            "Las capacitaciones funcionaron también como una fuente de observación para entender dudas recurrentes y oportunidades de mejora posteriores.",
+            "AClimate no tuvo un único lanzamiento que cerrara el proyecto. La plataforma continúa evolucionando a medida que aparecen nuevos recursos, socios y necesidades en los países donde opera.",
+            "Actualmente el ecosistema trabaja en diez países de Latinoamérica y África, pero cada implementación puede combinar históricos, monitoreo, pronósticos, modelos, escenarios o indicadores de manera diferente.",
+            "Mi trabajo ha estado especialmente vinculado al rediseño base, la investigación con usuarios finales en Colombia, la evolución de Amazonía y la implementación frontend colaborativa. La escala del producto depende de conservar esa distinción entre una experiencia común y decisiones locales.",
           ],
           activities: [
-            "Implementar recomendaciones priorizadas.",
-            "Acompañar sesiones de capacitación con usuarios.",
-            "Registrar nuevas dudas y oportunidades de iteración.",
+            "Colaborar en la implementación progresiva del rediseño.",
+            "Mantener patrones compartidos mientras aparecen nuevas necesidades territoriales.",
+            "Incorporar resultados de investigación a módulos existentes y nuevos.",
+            "Trabajar junto a desarrollo y especialistas climáticos para equilibrar claridad y rigor técnico.",
           ],
-          editorNote:
-            "Añade aquí: capturas de producción, métricas de rendimiento, material de capacitación y aprendizajes posteriores al lanzamiento.",
+          decisions: [
+            "Tratar el rediseño como una base evolutiva y no como una interfaz final cerrada.",
+            "Evitar que escalar el producto signifique estandarizar necesidades que son distintas.",
+            "Conservar suficiente flexibilidad para incorporar nuevos módulos sin reconstruir toda la experiencia.",
+          ],
         },
       ],
       reflection:
-        "El rediseño demostró que simplificar no significa quitar información, sino presentar la profundidad correcta en el momento correcto.",
-      editorChecklist: [
-        "Confirmar tecnologías exactas de la versión rediseñada.",
-        "Agregar métricas o resultados de las evaluaciones.",
-        "Mostrar al menos dos comparaciones antes/después.",
-        "Explicar qué se aprendió durante las capacitaciones.",
-      ],
+        "AClimate me enseñó que escalar un producto no significa uniformarlo. Cuando una misma plataforma sirve a países, cultivos y decisiones diferentes, el reto está en mantener una lógica de interacción coherente mientras la información, el lenguaje y las prioridades cambian con el contexto.",
+      editorChecklist: [],
     },
   ] satisfies Project[]
 ).sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
