@@ -122,7 +122,6 @@ export default async function HomePage({ params }: HomePageProps) {
             index="01"
             eyebrow={dictionary.home.projects.eyebrow}
             title={dictionary.home.projects.title}
-            intro={dictionary.home.projects.intro}
             dark
           />
 
@@ -149,7 +148,6 @@ export default async function HomePage({ params }: HomePageProps) {
             index="02"
             eyebrow={dictionary.home.process.eyebrow}
             title={dictionary.home.process.title}
-            intro={dictionary.home.process.intro}
           />
 
           <ol className="process-grid">
@@ -273,7 +271,6 @@ export default async function HomePage({ params }: HomePageProps) {
             index="05"
             eyebrow={dictionary.home.experience.eyebrow}
             title={dictionary.home.experience.title}
-            intro={dictionary.home.experience.intro}
           />
 
           <div className="experience-grid">

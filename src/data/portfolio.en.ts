@@ -57,7 +57,7 @@ export const profile: Profile = {
     "I turn user research into clear, accessible, and technically viable digital products. My frontend background lets me stay with an idea from the initial insight to a working interface.",
   about: [
     "I am a UX/UI Designer and Multimedia Engineer with nearly four years of experience in user research, usability testing, information architecture, prototyping, and responsive web interface implementation.",
-    "I have worked with farmers, extension agents, technical specialists, researchers, and decision-makers in international projects. I am especially interested in designing for real-world conditions: limited connectivity, complex technical information, and multidisciplinary teams.",
+    "I have worked with farmers, extension agents, technical specialists, researchers, and decision-makers in international projects.",
   ],
   availability:
     "Open to remote or hybrid opportunities and projects with social impact.",

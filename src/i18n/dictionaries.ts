@@ -49,20 +49,18 @@ const dictionaries = {
       locationTail: "Experiencia internacional · Español / English",
       metricsAria: "Resumen de experiencia",
       projects: {
-        eyebrow: "Trabajo seleccionado",
+        eyebrow: "Proyectos",
         title: "Casos que explican decisiones, no solo pantallas.",
-        intro:
-          "Cada proyecto abre una página propia con contexto, rol, resultados y una línea de tiempo del proceso. Así el trabajo se puede compartir, escanear y discutir en entrevista.",
       },
       process: {
         eyebrow: "Cómo trabajo",
         title: "Un proceso flexible con evidencia en cada cambio.",
         intro:
           "No uso Design Thinking como una lista decorativa. Cada fase debe dejar una decisión, un artefacto o una pregunta mejor formulada.",
-        bridgeAria: "Conexión entre investigación y desarrollo",
+        bridgeAria: "Continuidad del contexto a lo largo del proceso",
         research: "Investigación",
         bridgeText:
-          "Mi ventaja está en mantener el porqué del diseño cuando la interfaz pasa de Figma al producto real.",
+          "Mantengo contexto e insights presentes en cada ciclo de divergencia y convergencia, desde entender el problema hasta llevar la solución a producto.",
         frontend: "Frontend",
       },
       about: {
@@ -80,8 +78,6 @@ const dictionaries = {
       experience: {
         eyebrow: "Experiencia y formación",
         title: "UX dentro de productos técnicos e internacionales.",
-        intro:
-          "He investigado con usuarios rurales, técnicos, investigadores y tomadores de decisiones, y he acompañado soluciones hasta su implementación web.",
         professional: "Experiencia profesional",
         education: "Formación",
         educationAria: "Formación académica",
@@ -141,14 +137,12 @@ const dictionaries = {
         `Añade de una a tres imágenes de ${phase.toLowerCase()}: artefactos, pantallas, hallazgos o comparaciones antes/después. Configúralas en el campo media de esta fase dentro del archivo localizado en src/data/.`,
     },
     artifact: {
-      aria:
-        "Composición editorial que representa el perfil de Sebastián entre investigación, diseño y frontend",
+      aria: "Composición editorial que representa el perfil de Sebastián entre investigación, diseño y frontend",
       profile: "PERFIL / 2026",
       disciplines: "RESEARCH · DESIGN · CODE",
       role: "Diseñador UX/UI + Frontend",
       junctionLabel: "Mi punto de unión",
-      note:
-        "Escuchar a las personas sin perder de vista lo que el equipo puede construir.",
+      note: "Escuchar a las personas sin perder de vista lo que el equipo puede construir.",
       path: ["HALLAZGO", "INTERFAZ", "CÓDIGO"],
     },
     footer: {
@@ -157,8 +151,7 @@ const dictionaries = {
       title: "Hablemos de productos que deban ser claros y posibles.",
       copyright: "Diseñado y construido con intención.",
       socialAria: "Redes profesionales",
-      linkedinAria:
-        "LinkedIn de Sebastián, se abre en una pestaña nueva",
+      linkedinAria: "LinkedIn de Sebastián, se abre en una pestaña nueva",
       githubAria: "GitHub de Sebastián, se abre en una pestaña nueva",
     },
     notFound: {
@@ -222,20 +215,18 @@ const dictionaries = {
       locationTail: "International experience · Español / English",
       metricsAria: "Experience summary",
       projects: {
-        eyebrow: "Selected work",
+        eyebrow: "Projects",
         title: "Cases that explain decisions, not only screens.",
-        intro:
-          "Each project has its own page with context, role, outcomes, and a process timeline. The work is easy to share, scan, and discuss in a portfolio interview.",
       },
       process: {
         eyebrow: "How I work",
         title: "A flexible process with evidence behind every change.",
         intro:
           "I do not use Design Thinking as a decorative checklist. Each phase should produce a decision, an artifact, or a better question.",
-        bridgeAria: "Connection between research and development",
+        bridgeAria: "Continuity of context throughout the process",
         research: "Research",
         bridgeText:
-          "My advantage is preserving the reason behind a design as the interface moves from Figma into the real product.",
+          "I keep context and insights present through every cycle of divergence and convergence, from understanding the problem to bringing the solution into the product.",
         frontend: "Frontend",
       },
       about: {
@@ -253,8 +244,6 @@ const dictionaries = {
       experience: {
         eyebrow: "Experience and education",
         title: "UX within technical, international products.",
-        intro:
-          "I have researched with rural users, technical specialists, researchers, and decision-makers, and supported solutions through web implementation.",
         professional: "Professional experience",
         education: "Education",
         educationAria: "Academic background",
@@ -314,14 +303,12 @@ const dictionaries = {
         `Add one to three images for ${phase.toLowerCase()}: artifacts, screens, findings, or before/after comparisons. Configure them in this phase's media field inside the localized file in src/data/.`,
     },
     artifact: {
-      aria:
-        "Editorial composition representing Sebastián's work across research, design, and frontend development",
+      aria: "Editorial composition representing Sebastián's work across research, design, and frontend development",
       profile: "PROFILE / 2026",
       disciplines: "RESEARCH · DESIGN · CODE",
       role: "UX/UI Designer + Frontend",
       junctionLabel: "Where my skills meet",
-      note:
-        "Listening to people without losing sight of what the team can build.",
+      note: "Listening to people without losing sight of what the team can build.",
       path: ["INSIGHT", "INTERFACE", "CODE"],
     },
     footer: {
