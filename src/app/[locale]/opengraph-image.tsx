@@ -4,6 +4,11 @@ import { defaultLocale, isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
 export const dynamic = "force-static";
+
+export function generateStaticParams() {
+  return [{ locale: "es" }, { locale: "en" }];
+}
+
 export const alt = "Sebastián López Astudillo — UX/UI + Frontend portfolio";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
