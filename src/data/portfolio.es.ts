@@ -282,7 +282,7 @@ export const projects = (
       slug: "bulletin-builder",
       index: "01",
       title: "Bulletin Builder",
-      eyebrow: "Producto B2B · UX/UI + Frontend",
+      eyebrow: "Producto institucional · UX Research + UX/UI + Frontend",
       year: "2025 — hoy",
       accent: "clay",
       cover: "/images/projects/bulletin-builder/cover.webp",
@@ -290,29 +290,31 @@ export const projects = (
         "Flujo de creación de un boletín agroclimático en Bulletin Builder, mostrando el paso de mapa de lluvias y la vista previa del boletín.",
       featured: true,
       summary:
-        "Plataforma para crear, revisar, publicar y visualizar boletines agroclimáticos mediante formularios dinámicos y plantillas controladas.",
+        "Plataforma web para que equipos técnicos creen boletines agroclimáticos de forma autónoma, preservando reglas de contenido y diseño derivadas de investigación con productores.",
       shortOutcome:
-        "Frontend completo, cuatro plantillas y operación con aproximadamente 15 usuarios de dos instituciones.",
+        "De un piloto en Guatemala a un sistema para dos países: frontend completo, tres plantillas y un flujo iterado con evidencia de usabilidad.",
       challenge:
-        "El proceso necesitaba coordinar contenido técnico, revisión institucional, permisos y salidas publicables sin depender de maquetación manual para cada boletín.",
+        "Después de mejorar los boletines con investigación y pruebas con productores, apareció un segundo problema: producirlos en Word, Canva o Figma hacía difícil sostener las decisiones de diseño y requería demasiado trabajo especializado.",
       response:
-        "Copropuse, diseñé y desarrollé el frontend completo con componentes reutilizables, validaciones, roles, comentarios de revisión y exportación en JPG/PDF.",
-      role: "Copropuesta, UX/UI y responsabilidad principal de frontend",
-      team: "Equipo internacional con instituciones de Guatemala y Vietnam",
-      context: "Flujo editorial · Roles y permisos · Uso institucional",
+        "Copropuse Bulletin Builder, trabajé en su UX/UI y desarrollé el frontend completo. En Guatemala planeé, realicé y analicé las pruebas de usabilidad; también implementé mejoras derivadas de evaluaciones realizadas por el equipo de Vietnam.",
+      role: "UX Research en Guatemala · Copropuesta · UX/UI · Frontend principal",
+      team: "Equipo multidisciplinario e internacional con instituciones de Guatemala y Vietnam",
+      context:
+        "Mesas Técnicas Agroclimáticas · Producción de boletines · Uso institucional",
       methods: [
-        "Mapeo de flujo",
-        "Arquitectura de información",
+        "Entrevistas",
+        "Sistematización y personas",
         "Prototipado",
+        "Think-aloud",
         "Pruebas de usabilidad",
         "Iteración con stakeholders",
       ],
       stack: ["Next.js", "React", "TypeScript"],
       metrics: [
-        { value: "4", label: "plantillas activas" },
-        { value: "≈15", label: "usuarios" },
-        { value: "2", label: "instituciones" },
-        { value: "2", label: "países en operación" },
+        { value: "3", label: "plantillas" },
+        { value: "2", label: "países" },
+        { value: "4", label: "participantes · Guatemala" },
+        { value: "7", label: "participantes · Vietnam" },
       ],
       links: [
         {
@@ -330,123 +332,166 @@ export const projects = (
         {
           id: "discover",
           phase: "Descubrir",
-          title: "Mapear un proceso editorial con múltiples actores",
+          title: "Entender el boletín antes de diseñar el generador",
           summary:
-            "Antes de diseñar pantallas, fue necesario entender quién crea, quién revisa, quién aprueba y quién consulta cada boletín.",
+            "El punto de partida no fue una plataforma: fue entender por qué la información agroclimática no estaba llegando de forma clara y útil a los productores.",
           narrative: [
-            "La plataforma debía soportar la creación de contenido técnico mediante formularios dinámicos y, al mismo tiempo, conservar una salida visual consistente mediante plantillas controladas.",
-            "El contexto incluyó necesidades de Guatemala y recomendaciones de un equipo en Vietnam, por lo que el flujo debía ser flexible sin perder gobernanza.",
+            "En Guatemala, las Mesas Técnicas Agroclimáticas reúnen a equipos técnicos que producen boletines para apoyar decisiones de siembra, cosecha y manejo de cultivos. El problema era que muchos boletines eran extensos y técnicos, y su contenido no siempre se traducía en acciones comprensibles.",
+            "La investigación de usuario incluyó cinco talleres con 106 participantes y 27 entrevistas. Participé en los talleres, realicé gran parte de las entrevistas, analicé el material y trabajé junto al equipo en la sistematización y construcción de personas.",
           ],
           activities: [
-            "Identificar actores, permisos y puntos de traspaso.",
-            "Mapear el ciclo de creación, revisión, publicación y consulta.",
-            "Registrar restricciones de contenido y de plantilla.",
+            "Participar en talleres con productores y personal técnico.",
+            "Realizar y analizar entrevistas para entender necesidades, capacidades y contexto.",
+            "Sistematizar hallazgos y construir personas junto al equipo.",
+            "Contrastar información requerida, comprensión y canales de difusión.",
           ],
-          editorNote:
-            "Añade aquí: blueprint del proceso anterior, entrevistas o talleres realizados, roles participantes y principales fricciones.",
+          decisions: [
+            "Tratar comprensión, contexto y canales de difusión como parte del problema de diseño, no solo el contenido técnico.",
+            "Mantener los hallazgos y las personas como referencia para las siguientes iteraciones del boletín.",
+          ],
+          media: [
+            {
+              src: "/images/projects/bulletin-builder/research-workshops-guatemala.webp",
+              alt: "Collage de talleres de investigación en Guatemala con agricultores, agricultoras y personal técnico participando en sesiones grupales y actividades de co-diseño.",
+              caption:
+                "Talleres de investigación con agricultores, agricultoras y personal técnico en Chiquimulilla, Patzicía, Patzún y Tecpán, Guatemala.",
+              width: 900,
+              height: 560,
+            },
+          ],
         },
         {
           id: "define",
           phase: "Definir",
-          title: "Traducir el flujo en estados y reglas",
+          title: "Detectar un segundo problema: cómo sostener lo aprendido",
           summary:
-            "Los hallazgos se convirtieron en requerimientos funcionales, estados del boletín y reglas de permisos.",
+            "Cuando el boletín empezó a funcionar mejor para los productores, el reto pasó a ser cómo producirlo de forma autónoma sin perder sus reglas de diseño.",
           narrative: [
-            "El núcleo del producto no era un formulario aislado, sino un sistema de colaboración: validaciones, comentarios, control de plantillas, publicación y una URL pública para el resultado.",
-            "Definir estos estados temprano permitió alinear diseño y desarrollo y reducir ambigüedad durante la implementación.",
+            "Word y Canva daban demasiada libertad para modificar estructura, cantidad de texto y jerarquías. Figma permitía controlar mejor el diseño, pero imponía una curva de aprendizaje alta a perfiles que no trabajan con herramientas de diseño.",
+            "La oportunidad fue reformular el problema: no bastaba con diseñar un buen boletín; había que diseñar un sistema de producción que ayudara a los equipos técnicos a respetar las decisiones surgidas de la investigación.",
           ],
           activities: [
-            "Definir estados del boletín y transiciones permitidas.",
-            "Estructurar roles, permisos y acciones disponibles.",
-            "Priorizar requerimientos por valor y dependencia técnica.",
+            "Mapear el proceso existente de producción del boletín.",
+            "Distinguir qué contenido debía ser editable y qué reglas debían permanecer protegidas.",
+            "Traducir hallazgos de investigación en restricciones y requerimientos del producto.",
           ],
           decisions: [
-            "Separar contenido editable de reglas visuales de plantilla.",
-            "Hacer visible el estado de revisión en el contexto de la tarea.",
+            "Separar el contenido que el equipo técnico necesita completar de las reglas visuales que mantienen la claridad del boletín.",
+            "Reducir libertad donde podía romper decisiones validadas y conservarla donde el contexto local sí la requería.",
           ],
-          editorNote:
-            "Añade aquí: matriz de permisos, user flow, arquitectura de información, historias de usuario y criterios de aceptación.",
         },
         {
           id: "ideate",
           phase: "Idear",
-          title: "Diseñar un editor que reduzca errores",
+          title: "Convertir reglas de diseño en un flujo guiado",
           summary:
-            "La solución se planteó como un recorrido guiado, con feedback inmediato y componentes repetibles.",
+            "Junto a un compañero propuse una aplicación web que reemplazara la maquetación libre por un proceso paso a paso con restricciones explícitas.",
           narrative: [
-            "La ideación equilibró dos necesidades: dar libertad suficiente para crear contenido y mantener restricciones que protegieran la estructura del boletín.",
-            "Los patrones se pensaron para crecer con nuevas plantillas, campos y tipos de usuario.",
+            "El concepto fue que el personal técnico completara campos y contenidos dentro de una estructura predefinida mientras el sistema preservaba jerarquía, longitud y composición del boletín.",
+            "Se creó un piloto web y su evaluación en Guatemala mostró que el flujo se entendía y se percibía como una forma más fácil y ágil de producir el boletín. Esa evidencia permitió formalizar Bulletin Builder como producto.",
           ],
           activities: [
-            "Explorar navegación por pasos y agrupación de campos.",
-            "Diseñar feedback para validaciones y estados incompletos.",
-            "Definir patrones de comentarios y revisión contextual.",
+            "Copropuesta del concepto de Bulletin Builder.",
+            "Definir pasos, campos y restricciones del primer flujo.",
+            "Explorar cómo mostrar el progreso del boletín mientras se completa.",
+            "Preparar el concepto para una evaluación rápida antes de invertir en el sistema completo.",
           ],
-          editorNote:
-            "Añade aquí: alternativas exploradas, matriz de decisión, wireframes y motivos para escoger el patrón final.",
+          decisions: [
+            "Usar un recorrido guiado en lugar de una superficie de maquetación libre.",
+            "Hacer que las restricciones de diseño funcionaran como ayuda para el usuario, no como reglas que tuviera que memorizar.",
+          ],
+          media: [
+            {
+              src: "/images/projects/bulletin-builder/prototype-hazards-vietnam.webp",
+              alt: "Prototipo de Bulletin Builder para Vietnam en el paso de amenazas, con un flujo guiado de ocho etapas, campos para registrar riesgos y una vista previa del boletín agroclimático.",
+              caption:
+                "Prototipo del flujo para Vietnam: el contenido se completa paso a paso mientras una vista previa permite comprobar cómo se traduce la información al boletín.",
+              width: 1440,
+              height: 1138,
+            },
+          ],
         },
         {
           id: "prototype",
-          phase: "Prototipar y construir",
-          title: "Unir prototipo y código desde el inicio",
+          phase: "Prototipar",
+          title: "Formalizar un producto adaptable a dos contextos",
           summary:
-            "La experiencia se materializó con componentes reutilizables en Next.js, React y TypeScript.",
+            "El interés de Vietnam convirtió el piloto en un sistema que debía mantener un núcleo común sin imponer el mismo boletín a todos los países.",
           narrative: [
-            "La implementación incluyó formularios dinámicos, validaciones, permisos por rol, comentarios de revisión, exportación en JPG/PDF y publicación mediante URL pública.",
-            "Trabajar directamente sobre un sistema de componentes permitió validar estados reales —carga, error, vacío, permiso insuficiente y contenido incompleto— que suelen quedar fuera de un prototipo lineal.",
+            "Con equipos e instituciones de Guatemala y Vietnam se fueron definiendo requerimientos, secciones y contenidos específicos. El reto de diseño pasó de resolver una plantilla a construir un patrón capaz de admitir flujos distintos.",
+            "El prototipo funcional en Figma permitió recorrer las tareas de principio a fin y discutir requerimientos antes de consolidarlos en la plataforma.",
           ],
           activities: [
-            "Construir componentes reutilizables y tipados.",
-            "Integrar APIs y autenticación por roles.",
-            "Resolver exportación y visualización de plantillas.",
+            "Participar en reuniones de definición con equipos técnicos e instituciones.",
+            "Traducir requerimientos a flujos, pantallas y componentes de interfaz.",
+            "Diseñar y ajustar un prototipo funcional en Figma.",
+            "Definir patrones reutilizables con variantes según el contexto de cada país.",
           ],
-          editorNote:
-            "Añade aquí: anatomía de componentes, tokens, estados de interfaz, decisiones de arquitectura y capturas del Storybook si existe.",
+          decisions: [
+            "Compartir patrones y componentes entre países sin forzar que sus boletines tuvieran el mismo contenido o secuencia.",
+            "Permitir pasos específicos por plantilla dentro de una estructura de interacción consistente.",
+          ],
         },
         {
           id: "test",
           phase: "Validar",
-          title: "Probar el flujo completo, no solo las pantallas",
+          title: "Validar por contexto y convertir hallazgos en cambios",
           summary:
-            "Se ejecutaron y analizaron pruebas de usabilidad para Guatemala y se incorporaron recomendaciones del equipo de Vietnam.",
+            "En Guatemala planeé, moderé y analicé la evaluación; en Vietnam el equipo local realizó sus pruebas y yo trabajé sobre los hallazgos para implementar mejoras.",
           narrative: [
-            "Las pruebas se enfocaron en tareas críticas del ciclo editorial y permitieron detectar fricción en la comprensión de estados, la ubicación de acciones y la secuencia de creación y revisión.",
-            "Las recomendaciones se priorizaron según impacto en la tarea, frecuencia y esfuerzo de implementación.",
+            "En Guatemala, cuatro participantes de entidades pública y privada recorrieron el flujo mediante think-aloud y una comparación A/B. La creación se percibió clara en tareas como cargar el mapa, añadir recomendaciones y exportar, mientras algunos campos ligados al calendario lunar mostraron oportunidades de clarificación y automatización.",
+            "En Vietnam, siete participantes de instituciones agrícolas evaluaron el flujo completo. Sus hallazgos señalaron una curva de aprendizaje inicial y oportunidades para reducir entrada manual, estructurar mejor los campos y acercar la secuencia a la forma real en que trabajan con cultivos. Mi participación fue recibir esos resultados y traducirlos en ajustes de producto.",
           ],
           activities: [
-            "Preparar tareas representativas del proceso real.",
-            "Observar comprensión, éxito y facilidad de uso.",
-            "Sintetizar hallazgos y convertirlos en cambios de producto.",
+            "Planear, moderar y analizar las pruebas de usabilidad de Guatemala.",
+            "Aplicar think-aloud y comparación A/B sobre el flujo operativo.",
+            "Revisar los hallazgos generados por el equipo de Vietnam.",
+            "Priorizar e implementar cambios según impacto en la tarea y recurrencia.",
           ],
-          editorNote:
-            "Añade aquí: número y perfil de participantes, métricas por tarea, top 5 hallazgos, severidad y comparativa antes/después.",
+          decisions: [
+            "No asumir que un modelo mental observado en Guatemala se transfería automáticamente a Vietnam.",
+            "Priorizar entradas estructuradas y automatización cuando reducían trabajo repetitivo, errores y carga cognitiva.",
+          ],
+          media: [
+            {
+              src: "/images/projects/bulletin-builder/cover.webp",
+              alt: "Flujo de creación de un boletín agroclimático en Bulletin Builder, mostrando el paso de mapa de lluvias y la vista previa del boletín.",
+              caption:
+                "Interfaz de Bulletin Builder utilizada para recorrer y evaluar el flujo de creación de boletines agroclimáticos.",
+              width: 1576,
+              height: 998,
+            },
+          ],
         },
         {
           id: "deliver",
-          phase: "Entregar y escalar",
-          title: "Pasar de una plantilla a un sistema operable",
+          phase: "Implementar y evolucionar",
+          title: "Llevar la intención del diseño hasta el producto real",
           summary:
-            "La plataforma opera en Guatemala y Vietnam con cuatro plantillas y aproximadamente 15 usuarios de dos instituciones.",
+            "Bulletin Builder evolucionó a un frontend completo con tres plantillas y soporte para flujos de Guatemala y Vietnam.",
           narrative: [
-            "La entrega incluyó una base frontend preparada para mantener consistencia mientras se incorporan nuevas plantillas y necesidades institucionales.",
-            "El siguiente nivel de madurez es instrumentar analítica de producto y medir tiempos de creación, ciclos de revisión y errores recurrentes.",
+            "Desarrollé el frontend con Next.js, React y TypeScript, transformando las restricciones del boletín en componentes, validaciones y flujos reutilizables. El objetivo no era copiar un diseño de Figma, sino hacer que el sistema ayudara a mantenerlo en uso real.",
+            "El producto integra creación guiada, previsualización y exportación, y está preparado para evolucionar por plantilla y contexto a medida que aparecen nuevos hallazgos. Las iteraciones de Guatemala y Vietnam siguen alimentando ese proceso.",
           ],
           activities: [
-            "Publicar el flujo completo en producción.",
-            "Acompañar adopción y recoger recomendaciones de los equipos.",
-            "Mantener una estructura reutilizable para nuevas plantillas.",
+            "Desarrollar el frontend completo con componentes reutilizables y tipados.",
+            "Integrar el flujo de interfaz con los servicios y reglas del sistema.",
+            "Implementar hallazgos provenientes de las evaluaciones de usabilidad.",
+            "Mantener variantes por plantilla sin duplicar innecesariamente la experiencia base.",
           ],
-          editorNote:
-            "Añade aquí: resultados de adopción, evidencia de capacitación, métricas de uso y roadmap de próximos releases.",
+          decisions: [
+            "Convertir las restricciones derivadas de UX en comportamiento del sistema en lugar de depender de capacitación o memoria.",
+            "Mantener una base reutilizable para que nuevas plantillas puedan incorporarse sin reconstruir el producto desde cero.",
+          ],
         },
       ],
       reflection:
-        "El mayor aprendizaje fue tratar permisos, validaciones y estados como parte de la experiencia. En productos institucionales, la claridad del flujo es tan importante como la calidad visual.",
+        "Este proyecto me confirmó que una solución no termina cuando el usuario final entiende el diseño. También hay que diseñar las condiciones para que quienes producen el servicio puedan sostener esa claridad. Mi aporte conectó investigación, decisiones de UX y frontend para que la evidencia no se perdiera al pasar del hallazgo al producto.",
       editorChecklist: [
-        "Especificar cuántos participantes tuvo la prueba en Guatemala.",
-        "Mostrar un ejemplo antes/después de un hallazgo implementado.",
-        "Separar claramente decisiones propias de decisiones del equipo.",
-        "Ocultar datos sensibles en capturas de producción.",
+        "Añadir evidencia visual de la investigación inicial en Guatemala.",
+        "Mostrar al menos una decisión del boletín que luego se convirtió en una restricción del generador.",
+        "Incluir un antes/después de un hallazgo de usabilidad de Guatemala.",
+        "Mostrar una mejora implementada a partir de los hallazgos del equipo de Vietnam.",
       ],
     },
     {

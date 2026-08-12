@@ -77,22 +77,6 @@ export function CaseStudyProcess({ steps, locale }: CaseStudyProcessProps) {
                 ))}
               </div>
             ) : null}
-
-            {step.editorNote ? (
-              <EditorSlot
-                locale={locale}
-                title={dictionary.editor.completePhase(step.phase)}
-                note={step.editorNote}
-              />
-            ) : null}
-
-            {!step.media?.length ? (
-              <EditorSlot
-                locale={locale}
-                title={dictionary.editor.visualPending}
-                note={dictionary.editor.visualPendingNote(step.phase)}
-              />
-            ) : null}
           </div>
         </li>
       ))}

@@ -303,34 +303,36 @@ const projectTranslations: Record<string, ProjectTranslation> = {
   },
   "bulletin-builder": {
     title: "Bulletin Builder",
-    eyebrow: "B2B product · UX/UI + Frontend",
+    eyebrow: "Institutional product · UX Research + UX/UI + Frontend",
     year: "2025 — present",
     coverAlt:
       "Agroclimatic bulletin creation flow in Bulletin Builder, showing the rainfall map step and the bulletin preview.",
     summary:
-      "A platform for creating, reviewing, publishing, and viewing agroclimatic bulletins through dynamic forms and controlled templates.",
+      "A web platform that helps technical teams create agroclimatic bulletins autonomously while preserving content and design rules grounded in research with farmers.",
     shortOutcome:
-      "Complete frontend, four active templates, and operation with approximately 15 users across two institutions.",
+      "From a Guatemala pilot to a two-country system: complete frontend, three templates, and a workflow iterated with usability evidence.",
     challenge:
-      "The process needed to coordinate technical content, institutional review, permissions, and publishable outputs without manually laying out every bulletin.",
+      "After improving the bulletins through research and testing with farmers, a second problem emerged: producing them in Word, Canva, or Figma made it difficult to preserve design decisions and required too much specialized work.",
     response:
-      "I co-proposed, designed, and developed the complete frontend with reusable components, validation, roles, review comments, and JPG/PDF export.",
-    role: "Co-proposal, UX/UI, and primary frontend ownership",
-    team: "International team with institutions in Guatemala and Vietnam",
-    context: "Editorial workflow · Roles and permissions · Institutional use",
+      "I co-proposed Bulletin Builder, worked on its UX/UI, and developed the complete frontend. In Guatemala I planned, conducted, and analyzed the usability tests; I also implemented improvements based on evaluations conducted by the Vietnam team.",
+    role: "UX Research in Guatemala · Co-proposal · UX/UI · Primary frontend ownership",
+    team: "Multidisciplinary international team with institutions in Guatemala and Vietnam",
+    context:
+      "Agroclimatic Technical Tables · Bulletin production · Institutional use",
     methods: [
-      "Workflow mapping",
-      "Information architecture",
+      "Interviews",
+      "Synthesis and personas",
       "Prototyping",
+      "Think-aloud",
       "Usability testing",
       "Stakeholder iteration",
     ],
     stack: ["Next.js", "React", "TypeScript"],
     metrics: [
-      { value: "4", label: "active templates" },
-      { value: "≈15", label: "users" },
-      { value: "2", label: "institutions" },
-      { value: "2", label: "countries in operation" },
+      { value: "3", label: "templates" },
+      { value: "2", label: "countries" },
+      { value: "4", label: "participants · Guatemala" },
+      { value: "7", label: "participants · Vietnam" },
     ],
     links: [
       {
@@ -347,118 +349,161 @@ const projectTranslations: Record<string, ProjectTranslation> = {
     process: {
       discover: {
         phase: "Discover",
-        title: "Map an editorial process with multiple actors",
+        title: "Understand the bulletin before designing the builder",
         summary:
-          "Before designing screens, it was necessary to understand who creates, reviews, approves, and reads each bulletin.",
+          "The starting point was not a platform. It was understanding why agroclimatic information was not reaching farmers in a clear and useful way.",
         narrative: [
-          "The platform needed to support technical content creation through dynamic forms while preserving a consistent visual output through controlled templates.",
-          "The context included needs from Guatemala and recommendations from a team in Vietnam, so the workflow had to remain flexible without losing governance.",
+          "In Guatemala, Agroclimatic Technical Tables bring together technical teams that produce bulletins to support decisions about planting, harvesting, and crop management. The problem was that many bulletins were dense and technical, and their content did not always translate into understandable actions.",
+          "The user research included five workshops with 106 participants and 27 interviews. I participated in the workshops, conducted a large share of the interviews, analyzed the material, and worked with the team on synthesis and persona development.",
         ],
         activities: [
-          "Identify actors, permissions, and handoff points.",
-          "Map the creation, review, publication, and consultation cycle.",
-          "Document content and template constraints.",
+          "Participate in workshops with farmers and technical staff.",
+          "Conduct and analyze interviews to understand needs, capabilities, and context.",
+          "Synthesize findings and build personas with the team.",
+          "Compare information needs, comprehension, and dissemination channels.",
         ],
-        editorNote:
-          "Add: blueprint of the previous process, interviews or workshops conducted, participant roles, and the main friction points.",
+        decisions: [
+          "Treat comprehension, context, and dissemination channels as part of the design problem, not only the technical content.",
+          "Keep research findings and personas as references throughout later bulletin iterations.",
+        ],
+        media: [
+          {
+            src: "/images/projects/bulletin-builder/research-workshops-guatemala.webp",
+            alt: "Collage of research workshops in Guatemala with farmers and technical staff participating in group sessions and co-design activities.",
+            caption:
+              "Research workshops with farmers and technical staff in Chiquimulilla, Patzicía, Patzún, and Tecpán, Guatemala.",
+            width: 900,
+            height: 560,
+          },
+        ],
       },
       define: {
         phase: "Define",
-        title: "Translate the workflow into states and rules",
+        title: "Identify a second problem: how to preserve what we learned",
         summary:
-          "The findings became functional requirements, bulletin states, and permission rules.",
+          "Once the bulletin worked better for farmers, the challenge became producing it autonomously without losing its design rules.",
         narrative: [
-          "The core of the product was not an isolated form, but a collaboration system: validation, comments, template control, publication, and a public URL for the final output.",
-          "Defining these states early aligned design and development and reduced ambiguity during implementation.",
+          "Word and Canva gave teams too much freedom to change structure, text length, and hierarchy. Figma offered stronger design control, but introduced a steep learning curve for people who do not work with design tools.",
+          "The opportunity was to reframe the problem: designing a good bulletin was not enough. We also needed a production system that helped technical teams preserve decisions grounded in research.",
         ],
         activities: [
-          "Define bulletin states and permitted transitions.",
-          "Structure roles, permissions, and available actions.",
-          "Prioritize requirements by value and technical dependency.",
+          "Map the existing bulletin production process.",
+          "Distinguish editable content from rules that needed to remain protected.",
+          "Translate research findings into product constraints and requirements.",
         ],
         decisions: [
-          "Separate editable content from the template's visual rules.",
-          "Make the review status visible within the task context.",
+          "Separate the content technical teams need to enter from the visual rules that preserve bulletin clarity.",
+          "Reduce freedom where it could break validated decisions and preserve it where local context required flexibility.",
         ],
-        editorNote:
-          "Add: permissions matrix, user flow, information architecture, user stories, and acceptance criteria.",
       },
       ideate: {
         phase: "Ideate",
-        title: "Design an editor that reduces errors",
+        title: "Turn design rules into a guided workflow",
         summary:
-          "The solution was framed as a guided journey with immediate feedback and repeatable components.",
+          "Together with a colleague, I proposed a web application that would replace free-form layout work with a step-by-step process and explicit constraints.",
         narrative: [
-          "The ideation balanced two needs: enough freedom to create content and enough constraints to protect the bulletin structure.",
-          "The patterns were designed to grow with new templates, fields, and user types.",
+          "The concept was for technical staff to complete fields and content within a predefined structure while the system preserved the bulletin's hierarchy, length, and composition.",
+          "A web pilot was created and its evaluation in Guatemala showed that users understood the flow and saw it as an easier, faster way to produce the bulletin. That evidence supported formalizing Bulletin Builder as a product.",
         ],
         activities: [
-          "Explore step-based navigation and field grouping.",
-          "Design feedback for validation and incomplete states.",
-          "Define contextual review and commenting patterns.",
+          "Co-propose the Bulletin Builder concept.",
+          "Define the steps, fields, and constraints of the initial flow.",
+          "Explore how to show bulletin progress while users complete it.",
+          "Prepare the concept for a quick evaluation before investing in the complete system.",
         ],
-        editorNote:
-          "Add: explored alternatives, decision matrix, wireframes, and reasons for choosing the final pattern.",
+        decisions: [
+          "Use a guided journey instead of a free-form layout surface.",
+          "Make design constraints help users rather than become rules they had to remember.",
+        ],
+        media: [
+          {
+            src: "/images/projects/bulletin-builder/prototype-hazards-vietnam.webp",
+            alt: "Bulletin Builder prototype for Vietnam at the hazards step, showing an eight-step guided workflow, fields for entering hazards, and an agroclimatic bulletin preview.",
+            caption:
+              "Prototype of the Vietnam workflow: users complete content step by step while a preview shows how the information is translated into the bulletin.",
+            width: 1440,
+            height: 1138,
+          },
+        ],
       },
       prototype: {
-        phase: "Prototype and build",
-        title: "Connect prototype and code from the start",
+        phase: "Prototype",
+        title: "Formalize a product adaptable to two contexts",
         summary:
-          "The experience was implemented with reusable components in Next.js, React, and TypeScript.",
+          "Vietnam's interest turned the pilot into a system that needed a shared core without forcing every country into the same bulletin.",
         narrative: [
-          "The implementation included dynamic forms, validation, role-based permissions, review comments, JPG/PDF export, and publication through a public URL.",
-          "Working directly with a component system made it possible to validate real states—loading, error, empty, insufficient permission, and incomplete content—that are often absent from a linear prototype.",
+          "Requirements, sections, and country-specific content were progressively defined with teams and institutions in Guatemala and Vietnam. The design challenge moved from solving one template to building a pattern that could support different workflows.",
+          "A functional Figma prototype made it possible to walk through end-to-end tasks and discuss requirements before consolidating them in the platform.",
         ],
         activities: [
-          "Build reusable, typed components.",
-          "Integrate APIs and role-based authentication.",
-          "Implement template export and visualization.",
+          "Participate in definition meetings with technical teams and institutions.",
+          "Translate requirements into flows, screens, and interface components.",
+          "Design and refine a functional Figma prototype.",
+          "Define reusable patterns with variants for each country's context.",
         ],
-        editorNote:
-          "Add: component anatomy, tokens, interface states, architecture decisions, and Storybook screenshots if available.",
+        decisions: [
+          "Share patterns and components across countries without forcing their bulletins to use identical content or sequencing.",
+          "Allow template-specific steps within a consistent interaction structure.",
+        ],
       },
       test: {
         phase: "Validate",
-        title: "Test the complete workflow, not only the screens",
+        title: "Validate by context and turn findings into changes",
         summary:
-          "Usability tests were conducted and analyzed for Guatemala, and recommendations from the Vietnam team were incorporated.",
+          "In Guatemala I planned, moderated, and analyzed the evaluation; in Vietnam the local team conducted its tests and I worked from their findings to implement improvements.",
         narrative: [
-          "Testing focused on critical tasks in the editorial cycle and revealed friction in understanding states, locating actions, and following the creation and review sequence.",
-          "Recommendations were prioritized by task impact, frequency, and implementation effort.",
+          "In Guatemala, four participants from public and private organizations completed the workflow using think-aloud and an A/B comparison. Tasks such as uploading the map, adding recommendations, and exporting were perceived as clear, while fields related to the lunar calendar revealed opportunities for clearer labels and automation.",
+          "In Vietnam, seven participants from agricultural institutions evaluated the complete workflow. Their findings showed an initial learning curve and opportunities to reduce manual entry, structure fields more clearly, and align the sequence with the way they actually work across crops. My role was to receive those results and translate them into product adjustments.",
         ],
         activities: [
-          "Prepare tasks representative of the real process.",
-          "Observe comprehension, success, and ease of use.",
-          "Synthesize findings and convert them into product changes.",
+          "Plan, moderate, and analyze the Guatemala usability tests.",
+          "Apply think-aloud and A/B comparison to the operational flow.",
+          "Review findings produced by the Vietnam team.",
+          "Prioritize and implement changes based on task impact and recurrence.",
         ],
-        editorNote:
-          "Add: number and profile of participants, task metrics, top five findings, severity, and a before/after comparison.",
+        decisions: [
+          "Do not assume that a mental model observed in Guatemala would transfer automatically to Vietnam.",
+          "Prioritize structured inputs and automation when they reduced repetitive work, errors, and cognitive load.",
+        ],
+        media: [
+          {
+            src: "/images/projects/bulletin-builder/cover.webp",
+            alt: "Agroclimatic bulletin creation flow in Bulletin Builder, showing the rainfall map step and the bulletin preview.",
+            caption:
+              "Bulletin Builder interface used to walk through and evaluate the agroclimatic bulletin creation workflow.",
+            width: 1576,
+            height: 998,
+          },
+        ],
       },
       deliver: {
-        phase: "Deliver and scale",
-        title: "Move from one template to an operable system",
+        phase: "Implement and evolve",
+        title: "Carry design intent into the real product",
         summary:
-          "The platform operates in Guatemala and Vietnam with four templates and approximately 15 users from two institutions.",
+          "Bulletin Builder evolved into a complete frontend with three templates and support for workflows in Guatemala and Vietnam.",
         narrative: [
-          "The delivery included a frontend foundation designed to preserve consistency as new templates and institutional needs are added.",
-          "The next level of maturity is to add product analytics and measure creation time, review cycles, and recurring errors.",
+          "I developed the frontend with Next.js, React, and TypeScript, turning bulletin constraints into reusable components, validation, and workflows. The goal was not to reproduce a Figma design, but to make the system preserve it during real use.",
+          "The product supports guided creation, preview, and export, and is prepared to evolve by template and context as new findings emerge. Iterations from Guatemala and Vietnam continue to inform that process.",
         ],
         activities: [
-          "Release the complete workflow to production.",
-          "Support adoption and gather recommendations from the teams.",
-          "Maintain a reusable structure for new templates.",
+          "Develop the complete frontend with reusable, typed components.",
+          "Integrate the interface flow with the system's services and rules.",
+          "Implement findings from usability evaluations.",
+          "Maintain template variants without unnecessarily duplicating the base experience.",
         ],
-        editorNote:
-          "Add: adoption outcomes, training evidence, usage metrics, and a roadmap for upcoming releases.",
+        decisions: [
+          "Turn UX constraints into system behavior instead of relying on training or memory.",
+          "Maintain a reusable foundation so new templates can be added without rebuilding the product from scratch.",
+        ],
       },
     },
     reflection:
-      "The biggest lesson was to treat permissions, validation, and states as part of the experience. In institutional products, workflow clarity matters as much as visual quality.",
+      "This project confirmed that a solution does not end when the final user understands the design. We also need to design the conditions that allow the people producing the service to preserve that clarity. My contribution connected research, UX decisions, and frontend so the evidence would not be lost between insight and product.",
     editorChecklist: [
-      "Specify how many people participated in the Guatemala test.",
-      "Show a before/after example of an implemented finding.",
-      "Clearly separate your decisions from team decisions.",
-      "Hide sensitive data in production screenshots.",
+      "Add visual evidence from the initial Guatemala research.",
+      "Show at least one bulletin decision that later became a Builder constraint.",
+      "Include a before/after example from a Guatemala usability finding.",
+      "Show one improvement implemented from findings produced by the Vietnam team.",
     ],
   },
   "waterpoints-monitoring": {

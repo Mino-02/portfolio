@@ -112,8 +112,7 @@ const dictionaries = {
       briefTitle: "Primero, entender qué decisión debía mejorar.",
       problem: "Problema",
       response: "Respuesta",
-      resultsIndex: "Impacto / En una mirada",
-      resultsTitle: "La evidencia que un reclutador necesita encontrar rápido.",
+      resultsAria: "Cifras clave del proyecto",
       processIndex: "Proceso / Design Thinking",
       processTitle: "Qué hice, qué decidí y qué aprendí en cada fase.",
       processIntro:
@@ -278,8 +277,7 @@ const dictionaries = {
       briefTitle: "First, understand which decision needed to improve.",
       problem: "Problem",
       response: "Response",
-      resultsIndex: "Impact / At a glance",
-      resultsTitle: "The evidence a recruiter needs to find quickly.",
+      resultsAria: "Key project metrics",
       processIndex: "Process / Design Thinking",
       processTitle: "What I did, decided, and learned in each phase.",
       processIntro:

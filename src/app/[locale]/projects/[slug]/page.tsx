@@ -4,18 +4,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { CaseStudyProcess } from "@/components/case-study-process";
-import { EditorSlot } from "@/components/editor-slot";
 import {
   ArrowLeftIcon,
   ArrowRightIcon,
   ArrowUpRightIcon,
   CheckIcon,
 } from "@/components/icons";
-import {
-  getPortfolio,
-  getProjectBySlug,
-  projectSlugs,
-} from "@/data/portfolio";
+import { getPortfolio, getProjectBySlug, projectSlugs } from "@/data/portfolio";
 import { isLocale, localizePath, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -29,7 +24,9 @@ export function generateStaticParams() {
   return projectSlugs.map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: ProjectPageProps): Promise<Metadata> {
   const { locale: localeParam, slug } = await params;
 
   if (!isLocale(localeParam)) {
@@ -91,7 +88,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <article className="case-page" data-accent={project.accent}>
         <section className="case-hero">
           <div className="shell">
-            <nav className="case-breadcrumbs" aria-label={dictionary.caseStudy.breadcrumbsAria}>
+            <nav
+              className="case-breadcrumbs"
+              aria-label={dictionary.caseStudy.breadcrumbsAria}
+            >
               <Link href={`${homePath}#projects`}>
                 <ArrowLeftIcon />
                 {dictionary.caseStudy.allProjects}
@@ -106,15 +106,24 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 <h1>{project.title}</h1>
                 <p className="case-summary">{project.summary}</p>
 
-                <div className="case-tags" aria-label={dictionary.caseStudy.methodsAria}>
-                  {project.methods.map((method) => <span key={method}>{method}</span>)}
+                <div
+                  className="case-tags"
+                  aria-label={dictionary.caseStudy.methodsAria}
+                >
+                  {project.methods.map((method) => (
+                    <span key={method}>{method}</span>
+                  ))}
                 </div>
 
                 {project.links.length ? (
                   <div className="case-links">
                     {project.links.map((link, index) => (
                       <a
-                        className={index === 0 ? "button button--primary" : "button button--ghost"}
+                        className={
+                          index === 0
+                            ? "button button--primary"
+                            : "button button--ghost"
+                        }
                         href={link.href}
                         target="_blank"
                         rel="noreferrer"
@@ -122,7 +131,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                       >
                         {link.label}
                         <ArrowUpRightIcon />
-                        <span className="sr-only">{dictionary.caseStudy.externalNote}</span>
+                        <span className="sr-only">
+                          {dictionary.caseStudy.externalNote}
+                        </span>
                       </a>
                     ))}
                   </div>
@@ -147,15 +158,30 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </div>
 
             <dl className="case-meta">
-              <div><dt>{dictionary.caseStudy.meta.role}</dt><dd>{project.role}</dd></div>
-              <div><dt>{dictionary.caseStudy.meta.team}</dt><dd>{project.team}</dd></div>
-              <div><dt>{dictionary.caseStudy.meta.context}</dt><dd>{project.context}</dd></div>
-              <div><dt>{dictionary.caseStudy.meta.stack}</dt><dd>{project.stack.join(" · ")}</dd></div>
+              <div>
+                <dt>{dictionary.caseStudy.meta.role}</dt>
+                <dd>{project.role}</dd>
+              </div>
+              <div>
+                <dt>{dictionary.caseStudy.meta.team}</dt>
+                <dd>{project.team}</dd>
+              </div>
+              <div>
+                <dt>{dictionary.caseStudy.meta.context}</dt>
+                <dd>{project.context}</dd>
+              </div>
+              <div>
+                <dt>{dictionary.caseStudy.meta.stack}</dt>
+                <dd>{project.stack.join(" · ")}</dd>
+              </div>
             </dl>
           </div>
         </section>
 
-        <nav className="case-jump-nav" aria-label={dictionary.caseStudy.jumpAria}>
+        <nav
+          className="case-jump-nav"
+          aria-label={dictionary.caseStudy.jumpAria}
+        >
           <div className="shell case-jump-nav__inner">
             <span>{dictionary.caseStudy.jumpLabel}</span>
             <div>
@@ -176,19 +202,23 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <h2 id="brief-title">{dictionary.caseStudy.briefTitle}</h2>
             </div>
             <div className="case-brief__cards">
-              <article><span>{dictionary.caseStudy.problem}</span><p>{project.challenge}</p></article>
-              <article><span>{dictionary.caseStudy.response}</span><p>{project.response}</p></article>
+              <article>
+                <span>{dictionary.caseStudy.problem}</span>
+                <p>{project.challenge}</p>
+              </article>
+              <article>
+                <span>{dictionary.caseStudy.response}</span>
+                <p>{project.response}</p>
+              </article>
             </div>
           </div>
         </section>
 
-        <section className="case-results" aria-labelledby="results-title">
+        <section
+          className="case-results"
+          aria-label={dictionary.caseStudy.resultsAria}
+        >
           <div className="shell">
-            <div className="case-results__heading">
-              <p className="section-index">{dictionary.caseStudy.resultsIndex}</p>
-              <h2 id="results-title">{dictionary.caseStudy.resultsTitle}</h2>
-              <p>{project.shortOutcome}</p>
-            </div>
             <dl className="case-metrics">
               {project.metrics.map((metric) => (
                 <div key={`${metric.value}-${metric.label}`}>
@@ -200,14 +230,20 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
         </section>
 
-        <section className="case-process-section" aria-labelledby="case-process-title">
+        <section
+          className="case-process-section"
+          aria-labelledby="case-process-title"
+        >
           <div className="shell">
             <div className="case-process-heading">
               <div>
-                <p className="section-index">{dictionary.caseStudy.processIndex}</p>
-                <h2 id="case-process-title">{dictionary.caseStudy.processTitle}</h2>
+                <p className="section-index">
+                  {dictionary.caseStudy.processIndex}
+                </p>
+                <h2 id="case-process-title">
+                  {dictionary.caseStudy.processTitle}
+                </h2>
               </div>
-              <p>{dictionary.caseStudy.processIntro}</p>
             </div>
 
             <CaseStudyProcess steps={project.process} locale={locale} />
@@ -217,18 +253,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <section className="case-reflection" aria-labelledby="reflection-title">
           <div className="shell case-reflection__grid">
             <div>
-              <p className="section-index">{dictionary.caseStudy.reflectionIndex}</p>
-              <h2 id="reflection-title">{dictionary.caseStudy.reflectionTitle}</h2>
+              <p className="section-index">
+                {dictionary.caseStudy.reflectionIndex}
+              </p>
+              <h2 id="reflection-title">
+                {dictionary.caseStudy.reflectionTitle}
+              </h2>
             </div>
             <blockquote>{project.reflection}</blockquote>
-          </div>
-
-          <div className="shell">
-            <EditorSlot
-              locale={locale}
-              title={dictionary.caseStudy.checklistTitle}
-              note={project.editorChecklist.map((item) => `• ${item}`).join("\n")}
-            />
           </div>
         </section>
 
@@ -242,16 +274,22 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <strong>{nextProject.title}</strong>
               <p>{nextProject.shortOutcome}</p>
             </div>
-            <span className="next-case__icon" aria-hidden="true"><ArrowRightIcon /></span>
+            <span className="next-case__icon" aria-hidden="true">
+              <ArrowRightIcon />
+            </span>
             <span className="next-case__checks" aria-hidden="true">
-              <CheckIcon /><CheckIcon /><CheckIcon />
+              <CheckIcon />
+              <CheckIcon />
+              <CheckIcon />
             </span>
           </Link>
         </section>
 
         <div className="shell case-author">
           <span>{dictionary.caseStudy.authorLabel}</span>
-          <strong>{profile.name} · {profile.location}</strong>
+          <strong>
+            {profile.name} · {profile.location}
+          </strong>
         </div>
       </article>
     </main>
