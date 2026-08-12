@@ -126,157 +126,237 @@ export const projects = (
       coverAlt:
         "Identidad visual del Marco Campo Claro, con un símbolo de paisaje agrícola y el lema «De lenguaje técnico a acción entendible».",
       summary:
-        "Rediseño del proceso de creación y consumo de boletines agroclimáticos para pequeños productores rurales en contextos de baja conectividad.",
+        "Marco de simplificación de información agroclimática que convierte hallazgos de investigación en reglas editoriales y de interfaz para producir recomendaciones más claras y accionables.",
       shortOutcome:
-        "Tres iteraciones con 25 participantes llevaron la comprensión evaluada de 80 % a 100 %.",
+        "Tres iteraciones con 25 participantes distintos llevaron la comprensión evaluada de 80 % a 100 % y la aplicación completa del marco de 3/5 a 5/5.",
       challenge:
-        "La información agroclimática podía ser técnicamente correcta y, aun así, resultar difícil de convertir en una acción concreta para productores rurales.",
+        "La información agroclimática podía ser técnicamente correcta y aun así resultar difícil de comprender y convertir en acciones concretas para pequeños productores rurales.",
       response:
-        "Codiseñé un prototipo funcional de alta fidelidad y el Marco Campo Claro, una guía para transformar recomendaciones técnicas en mensajes más sencillos sin perder rigor.",
-      role: "Investigación, codiseño, UX/UI, prototipado y validación",
-      team: "Proyecto de maestría con técnicos y pequeños productores",
-      context: "Entornos rurales · Baja conectividad · Información técnica",
+        "Co-diseñé el Marco Campo Claro y lo integré en un generador para técnicos y un visor móvil para productores, convirtiendo principios de claridad en guías, restricciones y comportamientos verificables de interfaz.",
+      role: "Investigación y síntesis · Co-diseño del framework · UX/UI · Prototipado · Co-planeación y análisis de validación",
+      team: "Trabajo de grado junto a Daniel Guzmán",
+      context:
+        "Contexto objetivo: Guatemala · Pruebas con perfiles técnicos y productores en Colombia",
       methods: [
-        "Codiseño",
-        "Prototipado iterativo",
+        "Desk research",
+        "Diagrama de afinidad",
+        "Personas y journey maps",
+        "How Might We",
         "Pruebas moderadas",
-        "Pensamiento en voz alta",
-        "SUS",
-        "CES",
+        "SUS y CES",
       ],
       stack: ["Figma", "Figma Make", "Miro"],
       metrics: [
-        { value: "25", label: "participantes" },
-        { value: "3", label: "iteraciones moderadas" },
-        { value: "80 → 100 %", label: "comprensión en la muestra" },
+        { value: "25", label: "participantes · Colombia" },
+        { value: "3", label: "iteraciones" },
+        { value: "80 → 100 %", label: "comprensión evaluada" },
+        { value: "3/5 → 5/5", label: "aplicación completa del marco" },
         { value: "83,5", label: "SUS final" },
         { value: "6/7", label: "CES final" },
-        { value: "3/5 → 5/5", label: "aplicación completa del marco" },
       ],
       links: [],
       process: [
         {
           id: "discover",
           phase: "Descubrir",
-          title: "Entender dónde se perdía el significado",
+          title:
+            "Entender por qué información correcta seguía siendo difícil de usar",
           summary:
-            "El punto de partida fue observar el recorrido completo de la recomendación: desde quien la redacta hasta quien debe usarla para decidir.",
+            "El proyecto partió de investigación previa sobre boletines agroclimáticos para ampliar la mirada desde la interfaz hacia el recorrido completo de la información.",
           narrative: [
-            "El proyecto se centró en pequeños productores rurales y en los técnicos que preparan recomendaciones agroclimáticas. La brecha principal no era solo de acceso, sino de comprensión: lenguaje especializado, alta densidad de información y escenarios de conectividad limitada.",
-            "La investigación debía revelar qué elementos ayudaban a interpretar una recomendación, qué términos generaban dudas y qué contexto necesitaba una persona para convertir el mensaje en una acción.",
+            "El contexto objetivo fue Guatemala, donde investigaciones anteriores sobre boletines agroclimáticos ya habían evidenciado dificultades de comprensión, lenguaje técnico, acceso a la información y dependencia de mediadores para interpretar recomendaciones.",
+            "Realizamos investigación de escritorio sobre esos estudios, boletines existentes, canales de distribución y condiciones de baja conectividad. La pregunta dejó de ser solamente cómo mostrar mejor la información y pasó a incluir cómo se redacta, organiza y transforma antes de llegar al productor.",
           ],
           activities: [
-            "Delimitar el flujo de creación, publicación, lectura y uso del boletín.",
-            "Diferenciar necesidades de productores y de técnicos redactores.",
-            "Registrar barreras de lenguaje, jerarquía visual y contexto de uso.",
+            "Revisar investigaciones previas relacionadas con Bulletin Builder y boletines agroclimáticos.",
+            "Analizar boletines existentes y el recorrido de la información desde el técnico hasta el productor.",
+            "Identificar barreras de lenguaje, contexto, acceso y comprensión.",
+            "Consolidar evidencia y hallazgos en Miro para facilitar la síntesis.",
           ],
-          editorNote:
-            "Añade aquí: muestra y criterios de reclutamiento, guion de investigación, mapa de actores, frases anonimizadas y una síntesis visual de hallazgos.",
+          decisions: [
+            "Analizar conjuntamente la experiencia del técnico que produce la información y del productor que debe comprenderla.",
+            "Tratar la comprensión como un problema del sistema completo y no únicamente del diseño visual del boletín final.",
+          ],
+          media: [
+            {
+              src: "/images/projects/campo-claro/persona-tecnico-quiche.webp",
+              alt: "Ficha de persona de un técnico agropecuario de Quiché, Guatemala, con su contexto, objetivos, necesidades y uso de herramientas tecnológicas.",
+              caption:
+                "Perfil de técnico redactor sintetizado a partir de la investigación previa: sus necesidades combinan información localizada, claridad editorial y herramientas que reduzcan el trabajo manual.",
+              width: 2048,
+              height: 1536,
+            },
+            {
+              src: "/images/projects/campo-claro/persona-agricultor-quiche.webp",
+              alt: "Ficha de persona de un agricultor de Quiché, Guatemala, con información sobre su contexto agrícola, necesidades de información y acceso a tecnología.",
+              caption:
+                "Perfil de productor rural: necesita información breve, territorialmente relevante y accesible desde dispositivos y canales cotidianos.",
+              width: 2048,
+              height: 1536,
+            },
+            {
+              src: "/images/projects/campo-claro/persona-agricultora-quiche.webp",
+              alt: "Ficha de persona de una agricultora de Quiché, Guatemala, con sus objetivos, capacidades, necesidades agroclimáticas y condiciones de acceso tecnológico.",
+              caption:
+                "Perfil de productora rural utilizado para mantener presentes condiciones de acceso, lenguaje, contexto y toma de decisiones durante el diseño.",
+              width: 2048,
+              height: 1536,
+            },
+          ],
         },
         {
           id: "define",
           phase: "Definir",
-          title: "Convertir hallazgos en reglas de claridad",
+          title: "Convertir patrones de investigación en criterios de diseño",
           summary:
-            "La síntesis se tradujo en criterios verificables para simplificar sin volver imprecisa la recomendación.",
+            "La síntesis permitió pasar de una colección de fricciones a reglas concretas sobre qué significa producir una recomendación comprensible.",
           narrative: [
-            "El Marco Campo Claro organizó el problema como una serie de decisiones de contenido: qué información conservar, en qué orden presentarla y cómo expresar una acción con un lenguaje reconocible para el productor.",
-            "Los criterios también debían ser aplicables por técnicos, porque una solución útil necesitaba mejorar tanto el consumo como la creación del boletín.",
+            "Agrupamos y clusterizamos los hallazgos mediante un diagrama de afinidad y los complementamos con personas, journey maps y preguntas How Might We. La tensión principal aparecía en dos extremos del mismo servicio: el técnico necesitaba simplificar sin perder rigor y el productor necesitaba entender qué hacer y por qué hacerlo.",
+            "De esa convergencia surgió el Marco Campo Claro. Su principio fue relacionar el objetivo del boletín, el perfil del usuario y las restricciones del contexto para convertirlos en reglas de diseño que pudieran aplicarse de manera consistente.",
           ],
           activities: [
-            "Priorizar comprensión, aplicabilidad y facilidad de uso.",
-            "Definir la estructura del Marco Campo Claro.",
-            "Establecer qué debía medirse en cada iteración.",
+            "Clusterizar hallazgos y construir el diagrama de afinidad.",
+            "Sintetizar perfiles mediante personas y journey maps.",
+            "Transformar fricciones en oportunidades mediante How Might We.",
+            "Definir los principios y criterios medibles del Marco Campo Claro.",
           ],
           decisions: [
-            "Tratar el lenguaje como parte de la interfaz, no como contenido posterior.",
-            "Validar el resultado con los dos perfiles del sistema: productores y técnicos.",
+            "Hacer que cada recomendación comunique una acción principal y explique por qué realizarla.",
+            "Priorizar verbos de acción, lenguaje breve, definición de términos técnicos y orden por urgencia.",
+            "Convertir los hallazgos de investigación en reglas que pudieran evaluarse posteriormente con usuarios.",
           ],
-          editorNote:
-            "Añade aquí: diagrama de afinidad, definición del problema, How Might We, principios del marco y criterios de éxito.",
+          media: [
+            {
+              src: "/images/projects/campo-claro/journey-tecnico.webp",
+              alt: "Journey del técnico redactor desde la recepción del boletín técnico hasta su distribución, mostrando fricciones al interpretar pronósticos, redactar recomendaciones y depender de herramientas de diseño.",
+              caption:
+                "Journey del técnico: las fricciones aparecen antes de que el productor reciba el boletín, especialmente al interpretar, simplificar y preparar la información.",
+              width: 1136,
+              height: 574,
+            },
+            {
+              src: "/images/projects/campo-claro/journey-productor.webp",
+              alt: "Journey del productor rural desde la recepción del boletín por WhatsApp hasta la toma de decisiones agrícolas, mostrando una caída progresiva en la experiencia por lenguaje técnico y falta de contexto territorial.",
+              caption:
+                "Journey del productor: los problemas acumulados durante la producción terminan convirtiéndose en dificultades de comprensión y decisiones con incertidumbre.",
+              width: 1114,
+              height: 588,
+            },
+            {
+              src: "/images/projects/campo-claro/marco-campo-claro-regla.webp",
+              alt: "Diagrama del Marco Campo Claro que combina el objetivo del boletín, el perfil del usuario y las restricciones contextuales para producir una regla de diseño.",
+              caption:
+                "La síntesis convergió en una fórmula operativa: objetivo del boletín + perfil del usuario + restricción contextual = regla de diseño.",
+              width: 1137,
+              height: 614,
+            },
+          ],
         },
         {
           id: "ideate",
           phase: "Idear",
-          title: "Explorar una lectura más accionable",
+          title: "Pasar de una guía editorial a comportamiento de interfaz",
           summary:
-            "Las alternativas combinaron jerarquía visual, fragmentación de contenido y redacción orientada a acciones.",
+            "El reto no era únicamente documentar el marco, sino conseguir que sus reglas aparecieran en el momento exacto en que el técnico redactaba.",
           narrative: [
-            "La ideación buscó reducir el esfuerzo de lectura y hacer visible lo esencial: qué está pasando, a quién afecta, qué se recomienda hacer y bajo qué condiciones.",
-            "El codiseño permitió contrastar las propuestas con la experiencia de quienes producen y consumen la información.",
+            "Exploramos cómo transformar las reglas de Campo Claro en ayudas concretas: guías de redacción, contadores, alertas progresivas, detección de términos técnicos, vocabulario contextual y una revisión antes de publicar.",
+            "También experimentamos con IA para simplificar recomendaciones. Los resultados mejoraban cuando los prompts incorporaban las reglas del marco, pero decidimos no convertirla en una dependencia del MVP por costo, sostenibilidad operativa y pérdida potencial de control editorial.",
           ],
           activities: [
-            "Proponer estructuras de contenido y navegación.",
-            "Comparar maneras de presentar recomendaciones y alertas.",
-            "Seleccionar alternativas con potencial para baja conectividad.",
+            "Traducir reglas editoriales a componentes y comportamientos de interfaz.",
+            "Explorar alternativas para recomendaciones, vocabulario y revisión previa a publicación.",
+            "Probar conceptualmente el uso de IA apoyada en las reglas del framework.",
+            "Priorizar mecanismos que pudieran validarse sin depender de servicios externos.",
           ],
-          editorNote:
-            "Añade aquí: bocetos, Crazy 8s, matriz de priorización, decisiones descartadas y por qué.",
+          decisions: [
+            "Integrar las reglas críticas dentro de la interfaz en vez de depender de que el técnico las memorice.",
+            "Mantener la IA fuera del MVP y validar primero el valor del framework mediante interacción guiada.",
+            "Diseñar el vocabulario como parte de la comprensión de la recomendación y no como contenido aislado.",
+          ],
         },
         {
           id: "prototype",
           phase: "Prototipar",
-          title: "Hacer tangible el sistema",
+          title:
+            "Iterar desde una estructura navegable hasta un sistema funcional",
           summary:
-            "El resultado fue un prototipo funcional de alta fidelidad preparado para probar comprensión y facilidad de uso.",
+            "La solución evolucionó desde un prototipo de media fidelidad en Figma hasta experiencias funcionales construidas con Figma Make.",
           narrative: [
-            "El prototipo conectó la experiencia de lectura con el marco de creación, de modo que los cambios en lenguaje y estructura pudieran evaluarse como un sistema y no como pantallas aisladas.",
-            "Cada iteración incorporó ajustes antes de volver a exponer la propuesta a participantes.",
+            "La primera iteración utilizó un prototipo de media fidelidad para comprobar navegación, etiquetas, ubicación de funciones y organización visual antes de invertir en mayor detalle.",
+            "Las siguientes iteraciones utilizaron prototipos funcionales. La solución conectó dos módulos: un generador que guía al técnico durante la creación del boletín y un visor mobile-first para que productores consulten recomendaciones y vocabulario desde dispositivos de uso cotidiano.",
           ],
           activities: [
-            "Diseñar los estados clave del recorrido.",
-            "Preparar contenido realista para las tareas de prueba.",
-            "Construir un prototipo funcional de alta fidelidad.",
+            "Construir el prototipo de media fidelidad de la primera iteración en Figma.",
+            "Diseñar el generador guiado y el visor móvil como partes de un mismo servicio.",
+            "Construir las siguientes versiones funcionales con Figma Make.",
+            "Actualizar prototipos entre iteraciones a partir de la evidencia obtenida.",
           ],
-          editorNote:
-            "Añade aquí: wireframes, evolución visual, componentes, anotaciones de interacción y enlace al prototipo.",
+          decisions: [
+            "Usar la primera iteración para validar estructura antes de aumentar fidelidad.",
+            "Priorizar una experiencia mobile-first para el productor por la relevancia del celular y WhatsApp en el contexto de uso.",
+            "Mantener conectados el proceso de redacción del técnico y el resultado que finalmente recibe el productor.",
+          ],
         },
         {
           id: "test",
           phase: "Validar",
-          title: "Iterar con evidencia, no con preferencia",
+          title: "Separar facilidad de uso de comprensión real",
           summary:
-            "Se realizaron tres iteraciones de pruebas moderadas con 25 participantes.",
+            "Tres iteraciones con 25 participantes distintos mostraron que completar un flujo no garantiza que el contenido producido sea comprensible.",
           narrative: [
-            "Las sesiones permitieron observar comprensión, aplicación del marco y esfuerzo percibido. Los resultados se revisaron entre iteraciones para corregir tanto la interfaz como la forma de redactar las recomendaciones.",
-            "En la muestra evaluada, la comprensión de productores pasó de 80 % a 100 %. La aplicación completa del framework por técnicos pasó de 3/5 a 5/5, con un SUS de 83,5 y un CES de 6/7 en la iteración final.",
+            "Por limitaciones de acceso, las evaluaciones se realizaron en Colombia con participantes reclutados por perfil, aunque el problema de diseño y el contexto de referencia estaban centrados en Guatemala. Por eso interpretamos los resultados como evidencia sobre interacción y comprensión en la muestra evaluada, no como validación de adopción en campo guatemalteco.",
+            "La primera iteración se realizó con cinco perfiles generales. La segunda incluyó cinco técnicos y cinco productores; allí la comprensión alcanzó 12/15 respuestas correctas y la aplicación completa del marco ocurrió en 3/5 técnicos. La tercera utilizó cinco técnicos y cinco productores diferentes: la aplicación completa llegó a 5/5 y la comprensión a 15/15.",
+            "La tercera iteración obtuvo además un SUS promedio de 83,5 y un CES de 6/7 con técnicos. Sin embargo, solo 1/5 productores encontró espontáneamente el vocabulario contextual, por lo que su descubribilidad permaneció como el principal riesgo UX.",
           ],
           activities: [
-            "Moderación de tareas con pensamiento en voz alta.",
-            "Medición de comprensión y completitud.",
-            "Aplicación de SUS y CES.",
-            "Priorización de hallazgos para la siguiente iteración.",
+            "Co-planear y coanalizar las tres iteraciones de evaluación.",
+            "Comparar resultados y fricciones entre una versión y la siguiente.",
+            "Medir comprensión, aplicación del framework, SUS y CES.",
+            "Traducir hallazgos en cambios de contenido, interacción y jerarquía.",
           ],
-          editorNote:
-            "Añade aquí: protocolo, tareas, tabla de severidad, comparación entre iteraciones y citas anonimizadas.",
+          decisions: [
+            "Distinguir usabilidad operativa —poder completar el flujo— de usabilidad cognitiva —comprender correctamente el contenido—.",
+            "Acercar las guías y alertas al momento exacto de redacción de la recomendación.",
+            "Convertir las palabras técnicas en señales interactivas más reconocibles después de detectar la baja descubribilidad del vocabulario.",
+          ],
+          media: [
+            {
+              src: "/images/projects/campo-claro/resultados-validacion.webp",
+              alt: "Comparación de resultados entre la segunda y tercera iteración de Campo Claro: comprensión de productores de 80 a 100 por ciento, vocabulario espontáneo de 0 a 20 por ciento, aplicación del framework por técnicos de 60 a 100 por ciento y aptitud para prueba de 40 a 100 por ciento.",
+              caption:
+                "La tercera iteración mejoró comprensión, aplicación del framework y aptitud de los insumos; la descubribilidad del vocabulario siguió siendo el principal riesgo UX.",
+              width: 1126,
+              height: 583,
+            },
+          ],
         },
         {
           id: "deliver",
           phase: "Entregar",
-          title: "Dejar un marco que otros puedan aplicar",
+          title:
+            "Dejar un marco aplicable, medible y preparado para validación en campo",
           summary:
-            "La entrega combinó una experiencia validada y una herramienta práctica para producir contenido más claro.",
+            "La entrega final no fue solamente un prototipo: fue una lógica reutilizable para conectar investigación, redacción técnica e interfaz.",
           narrative: [
-            "El valor del proyecto no estuvo solo en una interfaz final, sino en dejar un criterio reutilizable para que los equipos técnicos pudieran sostener la claridad en nuevos boletines.",
-            "La siguiente etapa ideal es medir el uso del marco en producción, documentar excepciones y evaluar su transferencia a otros contextos agroclimáticos.",
+            "Campo Claro quedó documentado como un framework que transforma hallazgos de investigación en reglas editoriales y luego en comportamientos del producto. El generador, el visor móvil y el marco funcionan como partes del mismo sistema.",
+            "Los resultados muestran una mejora clara dentro de la muestra evaluada, pero no sustituyen una prueba en el contexto objetivo. El siguiente paso debe validar el sistema con técnicos y productores en Guatemala, observar uso sostenido y comprobar si las mejoras de comprensión se mantienen en decisiones agrícolas reales.",
           ],
           activities: [
-            "Consolidar el prototipo de alta fidelidad.",
-            "Documentar el Marco Campo Claro.",
-            "Registrar métricas, aprendizajes y oportunidades futuras.",
+            "Consolidar el Marco Campo Claro y sus reglas principales.",
+            "Definir prioridades del MVP a partir de las tres iteraciones.",
+            "Documentar resultados, limitaciones y riesgos todavía abiertos.",
+            "Proponer siguientes pasos para una validación contextual e implementación institucional.",
           ],
-          editorNote:
-            "Añade aquí: entregables finales, extracto del marco, recomendaciones de implementación y roadmap.",
+          decisions: [
+            "Priorizar para el MVP recomendaciones guiadas, checklist de publicación, vocabulario contextual y una experiencia móvil liviana.",
+            "No presentar los resultados obtenidos en Colombia como evidencia definitiva de adopción en Guatemala.",
+            "Mantener la validación en campo como condición previa a escalar la solución.",
+          ],
         },
       ],
       reflection:
-        "Este caso muestra cómo una decisión de UX Writing puede convertirse en una decisión de producto: cuando el contenido es crítico, la comprensión debe diseñarse, probarse y medirse.",
-      editorChecklist: [
-        "Aclarar tu aporte individual frente al equipo académico.",
-        "Incluir la distribución de los 25 participantes por perfil.",
-        "Agregar capturas de las tres iteraciones, no solo del resultado final.",
-        "Documentar una decisión descartada y el aprendizaje asociado.",
-      ],
+        "Este proyecto me dejó una distinción que ahora aplico en otros productos: completar una tarea no significa necesariamente comprenderla. Diseñar para información crítica exige validar tanto la usabilidad operativa como la comprensión del contenido, y convertir los hallazgos de investigación en reglas que el propio sistema pueda sostener.",
+      editorChecklist: [],
     },
     {
       slug: "bulletin-builder",

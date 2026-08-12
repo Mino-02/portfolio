@@ -155,151 +155,229 @@ const projectTranslations: Record<string, ProjectTranslation> = {
     coverAlt:
       "Visual identity of the Campo Claro Framework, featuring an agricultural landscape symbol and the tagline “From technical language to understandable action”.",
     summary:
-      "Redesign of the process for creating and consuming agroclimatic bulletins for smallholder farmers in low-connectivity contexts.",
+      "A technical-information simplification framework that turns research findings into editorial and interface rules for clearer, more actionable agroclimatic recommendations.",
     shortOutcome:
-      "Three iterations with 25 participants increased measured comprehension from 80% to 100%.",
+      "Three iterations with 25 distinct participants increased measured comprehension from 80% to 100% and complete framework application from 3/5 to 5/5.",
     challenge:
-      "Agroclimatic information could be technically correct and still be difficult for rural producers to turn into a concrete action.",
+      "Agroclimatic information could be technically correct and still be difficult for smallholder farmers to understand and translate into concrete actions.",
     response:
-      "I co-designed a high-fidelity functional prototype and the Campo Claro Framework, a guide for turning technical recommendations into clearer messages without losing rigor.",
-    role: "Research, co-design, UX/UI, prototyping, and validation",
-    team: "Master's project with technical specialists and smallholder farmers",
-    context: "Rural settings · Low connectivity · Technical information",
+      "I co-designed the Campo Claro Framework and integrated it into a generator for technical specialists and a mobile viewer for farmers, turning clarity principles into testable interface guidance, constraints, and behaviors.",
+    role: "Research and synthesis · Framework co-design · UX/UI · Prototyping · Co-planning and analysis of validation",
+    team: "Master's thesis with Daniel Guzmán",
+    context:
+      "Target context: Guatemala · Testing with technical and farmer profiles in Colombia",
     methods: [
-      "Co-design",
-      "Iterative prototyping",
+      "Desk research",
+      "Affinity mapping",
+      "Personas and journey maps",
+      "How Might We",
       "Moderated usability testing",
-      "Think-aloud protocol",
-      "SUS",
-      "CES",
+      "SUS and CES",
     ],
     stack: ["Figma", "Figma Make", "Miro"],
     metrics: [
-      { value: "25", label: "participants" },
-      { value: "3", label: "moderated iterations" },
-      { value: "80 → 100%", label: "comprehension in the sample" },
+      { value: "25", label: "participants · Colombia" },
+      { value: "3", label: "iterations" },
+      { value: "80 → 100%", label: "measured comprehension" },
+      { value: "3/5 → 5/5", label: "complete framework application" },
       { value: "83.5", label: "final SUS" },
       { value: "6/7", label: "final CES" },
-      { value: "3/5 → 5/5", label: "complete framework application" },
     ],
     links: [],
     process: {
       discover: {
         phase: "Discover",
-        title: "Understand where meaning was being lost",
+        title: "Understand why correct information was still difficult to use",
         summary:
-          "The starting point was the full recommendation journey: from the person who writes it to the person who must use it to decide what to do.",
+          "The project built on previous agroclimatic bulletin research to expand the focus from the interface to the full journey of the information.",
         narrative: [
-          "The project focused on smallholder farmers and the technical specialists who prepare agroclimatic recommendations. The main gap was not only access, but comprehension: specialized language, high information density, and limited-connectivity settings.",
-          "The research needed to reveal which elements helped people interpret a recommendation, which terms created uncertainty, and what context a person needed to turn the message into an action.",
+          "The target context was Guatemala, where previous research on agroclimatic bulletins had already revealed challenges involving comprehension, technical language, access to information, and reliance on intermediaries to interpret recommendations.",
+          "We conducted desk research on those studies, existing bulletins, dissemination channels, and low-connectivity conditions. The question moved beyond how to display information and began to include how it is written, organized, and transformed before it reaches the farmer.",
         ],
         activities: [
-          "Map the bulletin creation, publication, reading, and use journey.",
-          "Differentiate the needs of farmers and technical writers.",
-          "Document barriers related to language, visual hierarchy, and context of use.",
+          "Review previous research related to Bulletin Builder and agroclimatic bulletins.",
+          "Analyze existing bulletins and the information journey from technical specialist to farmer.",
+          "Identify barriers involving language, context, access, and comprehension.",
+          "Consolidate evidence and findings in Miro to support synthesis.",
         ],
-        editorNote:
-          "Add: sample and recruitment criteria, research guide, stakeholder map, anonymized quotes, and a visual synthesis of findings.",
+        decisions: [
+          "Study the experience of both the technical specialist producing the information and the farmer who needs to understand it.",
+          "Treat comprehension as a problem of the complete system rather than only the visual design of the final bulletin.",
+        ],
+        media: [
+          {
+            src: "/images/projects/campo-claro/persona-tecnico-quiche.webp",
+            alt: "Persona profile of an agricultural technical specialist from Quiché, Guatemala, showing context, goals, information needs, and technology use.",
+            caption:
+              "Technical specialist profile synthesized from previous research: their needs combine localized information, editorial clarity, and tools that reduce manual work.",
+            width: 2048,
+            height: 1536,
+          },
+          {
+            src: "/images/projects/campo-claro/persona-agricultor-quiche.webp",
+            alt: "Persona profile of a farmer from Quiché, Guatemala, showing agricultural context, information needs, and access to technology.",
+            caption:
+              "Rural farmer profile: information needs to be concise, territorially relevant, and accessible through everyday devices and channels.",
+            width: 2048,
+            height: 1536,
+          },
+          {
+            src: "/images/projects/campo-claro/persona-agricultora-quiche.webp",
+            alt: "Persona profile of a woman farmer from Quiché, Guatemala, showing goals, capabilities, agroclimatic information needs, and technology access conditions.",
+            caption:
+              "Rural farmer profile used to keep access conditions, language, context, and decision-making visible throughout the design process.",
+            width: 2048,
+            height: 1536,
+          },
+        ],
       },
       define: {
         phase: "Define",
-        title: "Turn findings into rules for clarity",
+        title: "Turn research patterns into design criteria",
         summary:
-          "The synthesis became testable criteria for simplifying recommendations without making them imprecise.",
+          "Synthesis transformed a collection of friction points into concrete rules for what a comprehensible recommendation should contain.",
         narrative: [
-          "The Campo Claro Framework organized the problem as a series of content decisions: what information to keep, in what order to present it, and how to express an action in language farmers recognize.",
-          "The criteria also needed to be usable by technical specialists, because a useful solution had to improve both bulletin consumption and bulletin creation.",
+          "We clustered findings through affinity mapping and complemented them with personas, journey maps, and How Might We questions. The main tension appeared at both ends of the service: technical specialists needed to simplify without losing rigor, while farmers needed to understand what to do and why.",
+          "The Campo Claro Framework emerged from that convergence. Its principle was to relate the bulletin objective, user profile, and contextual constraints to produce design rules that could be applied consistently.",
         ],
         activities: [
-          "Prioritize comprehension, applicability, and ease of use.",
-          "Define the structure of the Campo Claro Framework.",
-          "Establish what should be measured in each iteration.",
+          "Cluster findings and build the affinity diagram.",
+          "Synthesize profiles through personas and journey maps.",
+          "Turn friction points into opportunities through How Might We questions.",
+          "Define measurable principles and criteria for the Campo Claro Framework.",
         ],
         decisions: [
-          "Treat language as part of the interface, not as content added later.",
-          "Validate the outcome with both profiles in the system: farmers and technical specialists.",
+          "Make each recommendation communicate one main action and explain why it should be performed.",
+          "Prioritize action verbs, concise language, definitions for technical terms, and temporal urgency.",
+          "Turn research findings into rules that could later be evaluated with users.",
         ],
-        editorNote:
-          "Add: affinity diagram, problem definition, How Might We question, framework principles, and success criteria.",
+        media: [
+          {
+            src: "/images/projects/campo-claro/journey-tecnico.webp",
+            alt: "Journey of the technical specialist from receiving the technical bulletin to distribution, showing friction when interpreting forecasts, writing recommendations, and relying on design tools.",
+            caption:
+              "Technical specialist journey: friction begins before the farmer receives the bulletin, particularly while interpreting, simplifying, and preparing the information.",
+            width: 1136,
+            height: 574,
+          },
+          {
+            src: "/images/projects/campo-claro/journey-productor.webp",
+            alt: "Journey of the rural farmer from receiving the bulletin through WhatsApp to making agricultural decisions, showing increasing friction caused by technical language and lack of territorial context.",
+            caption:
+              "Farmer journey: problems accumulated during production eventually become comprehension difficulties and decisions made with uncertainty.",
+            width: 1114,
+            height: 588,
+          },
+          {
+            src: "/images/projects/campo-claro/marco-campo-claro-regla.webp",
+            alt: "Campo Claro Framework diagram combining the bulletin objective, user profile, and contextual constraints to produce a design rule.",
+            caption:
+              "The synthesis converged into an operational formula: bulletin objective + user profile + contextual constraint = design rule.",
+            width: 1137,
+            height: 614,
+          },
+        ],
       },
       ideate: {
         phase: "Ideate",
-        title: "Explore a more actionable reading experience",
+        title: "Move from an editorial guide to interface behavior",
         summary:
-          "The alternatives combined visual hierarchy, content chunking, and action-oriented writing.",
+          "The challenge was not simply documenting the framework, but making its rules appear at the exact moment a technical specialist was writing.",
         narrative: [
-          "The ideation aimed to reduce reading effort and make the essentials visible: what is happening, who it affects, what action is recommended, and under which conditions.",
-          "Co-design made it possible to compare the proposals with the experience of people who produce and consume the information.",
+          "We explored how Campo Claro rules could become concrete assistance: writing guidance, counters, progressive alerts, technical-term detection, contextual vocabulary, and a pre-publication review.",
+          "We also experimented with AI-assisted simplification. Results improved when prompts incorporated the framework rules, but we decided not to make AI a dependency of the MVP because of cost, operational sustainability, and potential loss of editorial control.",
         ],
         activities: [
-          "Propose content and navigation structures.",
-          "Compare ways to present recommendations and alerts.",
-          "Select alternatives with potential for low-connectivity contexts.",
+          "Translate editorial rules into interface components and behaviors.",
+          "Explore alternatives for recommendations, vocabulary, and pre-publication review.",
+          "Conceptually test AI-assisted simplification using framework rules.",
+          "Prioritize mechanisms that could be validated without relying on external services.",
         ],
-        editorNote:
-          "Add: sketches, Crazy 8s, prioritization matrix, discarded decisions, and the reasons behind them.",
+        decisions: [
+          "Embed critical rules into the interface instead of relying on technical specialists to remember them.",
+          "Keep AI outside the MVP and first validate the framework through guided interaction.",
+          "Treat vocabulary as part of recommendation comprehension rather than isolated content.",
+        ],
       },
       prototype: {
         phase: "Prototype",
-        title: "Make the system tangible",
+        title: "Iterate from a navigable structure to a functional system",
         summary:
-          "The result was a high-fidelity functional prototype prepared to test comprehension and ease of use.",
+          "The solution evolved from a medium-fidelity Figma prototype into functional experiences built with Figma Make.",
         narrative: [
-          "The prototype connected the reading experience with the creation framework, allowing language and structural changes to be evaluated as a system rather than as isolated screens.",
-          "Each iteration incorporated adjustments before the proposal was tested again with participants.",
+          "The first iteration used a medium-fidelity prototype to test navigation, labels, feature location, and visual organization before investing in greater fidelity.",
+          "Later iterations used functional prototypes. The solution connected two modules: a generator that guides technical specialists through bulletin creation and a mobile-first viewer where farmers can read recommendations and contextual vocabulary using everyday devices.",
         ],
         activities: [
-          "Design the key states in the journey.",
-          "Prepare realistic content for test tasks.",
-          "Build a high-fidelity functional prototype.",
+          "Build the first iteration's medium-fidelity prototype in Figma.",
+          "Design the guided generator and mobile viewer as parts of the same service.",
+          "Build subsequent functional versions with Figma Make.",
+          "Update prototypes between iterations based on collected evidence.",
         ],
-        editorNote:
-          "Add: wireframes, visual evolution, components, interaction annotations, and a link to the prototype.",
+        decisions: [
+          "Use the first iteration to validate structure before increasing fidelity.",
+          "Prioritize a mobile-first farmer experience because of the importance of phones and WhatsApp in the target context.",
+          "Keep the technical specialist's writing process connected to the output ultimately received by the farmer.",
+        ],
       },
       test: {
         phase: "Validate",
-        title: "Iterate with evidence, not preference",
+        title: "Separate ease of use from actual comprehension",
         summary:
-          "Three rounds of moderated testing were conducted with 25 participants.",
+          "Three iterations with 25 distinct participants showed that completing a workflow does not guarantee that the resulting content is understandable.",
         narrative: [
-          "The sessions made it possible to observe comprehension, framework application, and perceived effort. Results were reviewed between iterations to improve both the interface and the way recommendations were written.",
-          "In the evaluated sample, farmer comprehension increased from 80% to 100%. Complete framework application by technical specialists increased from 3/5 to 5/5, with an SUS score of 83.5 and CES of 6/7 in the final iteration.",
+          "Because of access constraints, evaluations were conducted in Colombia with participants recruited by profile, while the design problem and reference context remained centered on Guatemala. We therefore treated the findings as evidence about interaction and comprehension within the evaluated sample, not as validation of adoption in the Guatemalan field context.",
+          "The first iteration involved five general-profile participants. The second involved five technical specialists and five farmers; comprehension reached 12/15 correct answers and complete framework application occurred in 3/5 technical participants. The third used five new technical specialists and five new farmers: complete framework application reached 5/5 and comprehension reached 15/15.",
+          "The third iteration also produced an average SUS of 83.5 and CES of 6/7 with technical specialists. However, only 1/5 farmers spontaneously discovered the contextual vocabulary, leaving discoverability as the main unresolved UX risk.",
         ],
         activities: [
-          "Moderate tasks using the think-aloud protocol.",
-          "Measure comprehension and completeness.",
-          "Apply SUS and CES.",
-          "Prioritize findings for the next iteration.",
+          "Co-plan and co-analyze all three evaluation iterations.",
+          "Compare results and friction points between one version and the next.",
+          "Measure comprehension, framework application, SUS, and CES.",
+          "Translate findings into changes to content, interaction, and hierarchy.",
         ],
-        editorNote:
-          "Add: protocol, tasks, severity table, iteration comparison, and anonymized quotes.",
+        decisions: [
+          "Distinguish operational usability — being able to complete a workflow — from cognitive usability — correctly understanding its content.",
+          "Move guidance and alerts closer to the exact moment a recommendation is written.",
+          "Make technical terms more recognizable as interactive elements after observing low vocabulary discoverability.",
+        ],
+        media: [
+          {
+            src: "/images/projects/campo-claro/resultados-validacion.webp",
+            alt: "Comparison between the second and third Campo Claro iterations: farmer comprehension increased from 80 to 100 percent, spontaneous vocabulary discovery from 0 to 20 percent, framework application by technical specialists from 60 to 100 percent, and test readiness from 40 to 100 percent.",
+            caption:
+              "The third iteration improved comprehension, framework application, and input readiness; vocabulary discoverability remained the main unresolved UX risk.",
+            width: 1126,
+            height: 583,
+          },
+        ],
       },
       deliver: {
         phase: "Deliver",
-        title: "Leave a framework others can apply",
+        title:
+          "Leave an applicable, measurable framework ready for field validation",
         summary:
-          "The delivery combined a validated experience with a practical tool for producing clearer content.",
+          "The final deliverable was not only a prototype, but a reusable logic connecting research, technical writing, and interface behavior.",
         narrative: [
-          "The value of the project was not limited to a final interface. It also established reusable criteria that technical teams could apply to preserve clarity in future bulletins.",
-          "An ideal next step would be to measure framework use in production, document exceptions, and evaluate how well it transfers to other agroclimatic contexts.",
+          "Campo Claro was documented as a framework that turns research findings into editorial rules and then into product behaviors. The generator, mobile viewer, and framework operate as parts of the same system.",
+          "The results show a clear improvement within the evaluated sample, but they do not replace testing in the target context. The next step should validate the system with technical specialists and farmers in Guatemala, observe sustained use, and determine whether comprehension improvements persist in real agricultural decisions.",
         ],
         activities: [
-          "Consolidate the high-fidelity prototype.",
-          "Document the Campo Claro Framework.",
-          "Record metrics, lessons, and future opportunities.",
+          "Consolidate the Campo Claro Framework and its main rules.",
+          "Define MVP priorities based on the three iterations.",
+          "Document results, limitations, and remaining risks.",
+          "Propose next steps for contextual validation and institutional implementation.",
         ],
-        editorNote:
-          "Add: final deliverables, a framework excerpt, implementation recommendations, and roadmap.",
+        decisions: [
+          "Prioritize guided recommendations, a publication checklist, contextual vocabulary, and a lightweight mobile experience for the MVP.",
+          "Do not present results obtained in Colombia as definitive evidence of adoption in Guatemala.",
+          "Keep field validation as a prerequisite before scaling the solution.",
+        ],
       },
     },
     reflection:
-      "This case shows how a UX writing decision can become a product decision: when content is critical, comprehension must be designed, tested, and measured.",
-    editorChecklist: [
-      "Clarify your individual contribution compared with the academic team.",
-      "Include the distribution of the 25 participants by profile.",
-      "Add screenshots from all three iterations, not only the final result.",
-      "Document one discarded decision and the lesson it produced.",
-    ],
+      "This project left me with a distinction I now apply to other products: completing a task does not necessarily mean understanding it. Designing critical information requires validating both operational usability and content comprehension, and turning research findings into rules the system itself can sustain.",
+    editorChecklist: [],
   },
   "bulletin-builder": {
     title: "Bulletin Builder",
