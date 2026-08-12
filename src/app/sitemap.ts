@@ -4,6 +4,8 @@ import { projectSlugs } from "@/data/portfolio";
 import { locales } from "@/i18n/config";
 import { siteUrl } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 const routePaths = [
   "",
   "/projects",
