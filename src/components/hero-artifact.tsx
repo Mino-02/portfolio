@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getPortfolio } from "@/data/portfolio";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { assetPath } from "@/lib/asset-path";
 
 type HeroArtifactProps = {
   locale: Locale;
@@ -26,7 +27,7 @@ export function HeroArtifact({ locale }: HeroArtifactProps) {
         <div className="artifact-portrait">
           {profile.photo ? (
             <Image
-              src={profile.photo.src}
+              src={assetPath(profile.photo.src)}
               alt={profile.photo.alt}
               fill
               preload

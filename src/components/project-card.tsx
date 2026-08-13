@@ -5,6 +5,7 @@ import { ArrowRightIcon } from "@/components/icons";
 import type { Project } from "@/data/portfolio";
 import { localizePath, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { assetPath } from "@/lib/asset-path";
 
 type ProjectCardProps = {
   project: Project;
@@ -15,21 +16,29 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
   const dictionary = getDictionary(locale);
 
   return (
-    <article className={`project-card${project.featured ? " project-card--featured" : ""}`}>
+    <article
+      className={`project-card${project.featured ? " project-card--featured" : ""}`}
+    >
       <Link
         href={localizePath(locale, `/projects/${project.slug}`)}
         aria-label={dictionary.projectCard.openAria(project.title)}
       >
         <div className="project-card__visual">
           <Image
-            src={project.cover}
+            src={assetPath(project.cover)}
             alt={project.coverAlt}
             width={1200}
             height={760}
             unoptimized
-            sizes={project.featured ? "(max-width: 920px) 100vw, 66vw" : "(max-width: 920px) 100vw, 33vw"}
+            sizes={
+              project.featured
+                ? "(max-width: 920px) 100vw, 66vw"
+                : "(max-width: 920px) 100vw, 33vw"
+            }
           />
-          <span className="project-card__index" aria-hidden="true">{project.index}</span>
+          <span className="project-card__index" aria-hidden="true">
+            {project.index}
+          </span>
           <span className="project-card__arrow" aria-hidden="true">
             <ArrowRightIcon />
           </span>

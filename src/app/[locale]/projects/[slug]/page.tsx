@@ -13,6 +13,7 @@ import {
 import { getPortfolio, getProjectBySlug, projectSlugs } from "@/data/portfolio";
 import { isLocale, localizePath, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { assetPath } from "@/lib/asset-path";
 
 type ProjectPageProps = {
   params: Promise<{ locale: string; slug: string }>;
@@ -150,7 +151,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
               <figure className="case-hero__visual">
                 <Image
-                  src={project.cover}
+                  src={assetPath(project.cover)}
                   alt={project.coverAlt}
                   width={1200}
                   height={760}

@@ -5,6 +5,7 @@ import { CheckIcon } from "@/components/icons";
 import type { ProcessStep } from "@/data/portfolio";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { assetPath } from "@/lib/asset-path";
 
 type CaseStudyProcessProps = {
   steps: ProcessStep[];
@@ -66,7 +67,7 @@ export function CaseStudyProcess({ steps, locale }: CaseStudyProcessProps) {
                 {step.media.map((item) => (
                   <figure key={item.src}>
                     <Image
-                      src={item.src}
+                      src={assetPath(item.src)}
                       alt={item.alt}
                       width={item.width}
                       height={item.height}
