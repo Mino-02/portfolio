@@ -49,7 +49,7 @@ export const profile: Profile = {
   photo: profileEs.photo
     ? {
         ...profileEs.photo,
-        alt: "Sebastián López, UX/UI designer and frontend developer",
+        alt: "Sebastián López A., UX/UI designer and frontend developer",
       }
     : null,
   headline: "I design decisions people can act on.",

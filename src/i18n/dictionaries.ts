@@ -6,7 +6,7 @@ const dictionaries = {
       role: "Diseñador UX/UI + Frontend",
       description:
         "Diseñador UX/UI e Ingeniero Multimedia enfocado en investigación, usabilidad, accesibilidad y desarrollo frontend con Next.js, React y TypeScript.",
-      applicationName: "Portafolio de Sebastián López",
+      applicationName: "Portafolio de Sebastián López A.",
       keywords: [
         "Diseñador UX/UI",
         "Investigación UX",
@@ -171,7 +171,7 @@ const dictionaries = {
       role: "UX/UI Designer + Frontend",
       description:
         "UX/UI Designer and Multimedia Engineer focused on research, usability, accessibility, and frontend development with Next.js, React, and TypeScript.",
-      applicationName: "Sebastián López Portfolio",
+      applicationName: "Sebastián López A. Portfolio",
       keywords: [
         "UX/UI Designer",
         "UX Research",

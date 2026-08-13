@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Sebastián López Astudillo",
-  shortName: "Sebastián López",
+  shortName: "Sebastián López A.",
   location: "Cali, Colombia",
   email: "sebaslopezastu08@gmail.com",
   phoneDisplay: "+57 305 766 5223",

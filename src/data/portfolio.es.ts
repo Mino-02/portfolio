@@ -2,7 +2,7 @@ import type { Metric, PortfolioData, Project } from "./portfolio.types";
 
 export const profile = {
   name: "Sebastián López Astudillo",
-  shortName: "Sebastián López",
+  shortName: "Sebastián López A.",
   role: "Diseñador UX/UI · Investigación UX · Frontend",
   location: "Cali, Colombia",
   email: "sebaslopezastu08@gmail.com",
@@ -11,7 +11,7 @@ export const profile = {
   github: "https://github.com/Mino-02",
   photo: {
     src: "/images/profile/sebastian.webp",
-    alt: "Sebastián López, diseñador UX/UI y desarrollador frontend",
+    alt: "Sebastián López A., diseñador UX/UI y desarrollador frontend",
   },
   cv: "/cv/Sebastian_Lopez_Astudillo_CV_ES.docx",
   headline: "Diseño decisiones que las personas pueden usar.",

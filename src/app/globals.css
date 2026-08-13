@@ -1094,6 +1094,10 @@ select {
   align-items: start;
 }
 
+.about-intro {
+  min-width: 0;
+}
+
 .about-intro h2 {
   margin-top: 20px;
   font-size: clamp(3.3rem, 6vw, 5.5rem);
@@ -2616,7 +2620,10 @@ select {
   }
 
   .section-heading :is(h1, h2) {
-    font-size: clamp(2.6rem, 14vw, 4.1rem);
+    max-width: 100%;
+    font-size: clamp(2.5rem, 12vw, 3.25rem);
+    overflow-wrap: anywhere;
+    hyphens: auto;
   }
 
   .projects-section,
@@ -2657,7 +2664,10 @@ select {
   }
 
   .about-intro h2 {
-    font-size: clamp(3rem, 15vw, 5rem);
+    max-width: 100%;
+    font-size: clamp(2.75rem, 12.5vw, 3.6rem);
+    overflow-wrap: anywhere;
+    hyphens: auto;
   }
 
   .principles-stack article {
@@ -2718,7 +2728,15 @@ select {
   }
 
   .case-hero__copy h1 {
-    font-size: clamp(4rem, 19vw, 6.4rem);
+    max-width: 100%;
+    font-size: clamp(3rem, 15vw, 4.6rem);
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
+  .case-hero__copy .case-title--long {
+    font-size: clamp(2.75rem, 13.5vw, 4rem);
+    line-height: 0.9;
   }
 
   .case-links {

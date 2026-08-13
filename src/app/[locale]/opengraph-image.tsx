@@ -45,7 +45,7 @@ export default async function OpenGraphImage({ params }: OpenGraphImageProps) {
           fontSize: 22,
         }}
       >
-        <span>SEBASTIÁN LÓPEZ</span>
+        <span>SEBASTIÁN LÓPEZ A.</span>
         <span style={{ color: "#f2aa18" }}>UX/UI · RESEARCH · FRONTEND</span>
       </div>
       <div style={{ display: "flex", flexDirection: "column", maxWidth: 960 }}>
